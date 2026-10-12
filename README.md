@@ -130,4 +130,4 @@ Algunos proveedores son personas naturales. Por eso:
 - Las reglas de asociación incluyen reglas triviales (9,110). De las 12 seleccionadas, 6 son casi tautológicas y la web solo muestra las otras 6.
 - No se probó un clúster real. Las conclusiones de escala (10×, 100×) son **estimaciones** y están marcadas como tales.
 - La comparación antes y después de la ley dentro de las reglas de asociación quedó abierta.
-- La comparación de igualdad entre Apriori y FP-Growth dio `False` (1,969 vs 2,005 itemsets). La causa probable es el límite de 5 ítems de Apriori (hipótesis, aún sin comprobar; ver página 8).
+- La comparación de igualdad entre Apriori y FP-Growth dio `False` (1,969 vs 2,005 itemsets). La causa probable es el límite de 5 ítems de Apriori (hipótesis, aún sin comprobar; ver la página **Apriori y FP-Growth** de la web).
