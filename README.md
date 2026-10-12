@@ -4,7 +4,7 @@ Proyecto Integrador de Data Mining (UTEC) — Prof. Heider Sanchez.
 Datos: contrataciones públicas del SEACE en formato OCDS (OECE), enero 2024 a agosto 2026.
 
 **Integrantes:** Anthony Roca · Willian Berrocal · Jimena Mamani
-**Página web:** [https://seace-mineria.streamlit.app/] 
+**Página web:** https://seace-mineria.streamlit.app/
 
 ## ¿De qué trata?
 Una contratación pública deja mucho rastro: miles de procesos, textos de ítems, postores y adjudicaciones.
@@ -36,7 +36,7 @@ La limpieza completa (embudo, decisiones, calidad y límites) está en la págin
 |---|---|---|
 | MinHash (128 hashes) | Error medio 0.027, p95 0.070 | `B_01.1` |
 | LSH (21 bandas × 6 filas) | Recall 0.989 en subconjunto. 693,144 candidatos = 0.005% de 13,318,344,028 pares. Precisión 10.3% sobre todos los textos | `B_01.1` |
-| ANN HNSW (ef=16) | Recall 96.1%, unas 20× más rápido (0.097 ms vs 1.91 ms). IVF fue más lento que la búsqueda exacta desde nprobe 64 | `B_01.2` |
+| ANN IVF y HNSW frente a la búsqueda exacta (HNSW ef=16) | Recall 96.1%, unas 20× más rápido (0.097 ms vs 1.91 ms). IVF fue más lento que la búsqueda exacta desde nprobe 64 | `B_01.2` |
 | Bloom filter (10 bits/elem) | Falsos positivos 0.12%, 276 KiB frente a ~19 MiB de un set | `B_03` |
 | Count-Min Sketch (w=50,000) | Error absoluto medio 3.87 (la media real es 11.02); con w=2,719 sube a 416 | `B_04` |
 | DGIM | Error relativo 9–12%, unos 66 bytes teóricos para W=50,000 | `B_05` |
@@ -66,21 +66,46 @@ streamlit run web/app.py
 ```
 Python 3.11 o superior. El equipo usó 3.14 y la web se probó también en 3.13.
 
+## Módulos de la página
+Cada hallazgo es un módulo con su pregunta de interés, visualización, interpretación escrita y, donde aplica, controles en vivo.
+
+| Módulo (`web/pages/`) | Parte | Controles en vivo |
+|---|---|---|
+| Datos, KDD y limpieza | I | (texto, embudo y calidad; con cita de la fuente) |
+| EDA | I | año y métrica |
+| Spark y particiones | I | estadístico (mínimo o mediana) |
+| MinHash y LSH | II | número de hashes, bandas × filas y umbral |
+| Casos de textos | II | tipo de caso, umbral de Jaccard y cuántos mostrar |
+| ANN | III | método (IVF o HNSW) y su parámetro (nprobe o efSearch) |
+| Bloom filter | IV | bits por elemento y número de hashes |
+| Count-Min Sketch | IV | ancho y profundidad |
+| DGIM | IV | tamaño de la ventana |
+| Reglas de asociación | V | soporte, confianza y lift mínimos; consecuente; ocultar reglas triviales |
+| Apriori y FP-Growth | V | soporte mínimo |
+| Discusión crítica | VI | (texto: valor de cada técnica, escala, implicancias y limitaciones) |
+
+Hay más de tres hallazgos con parámetros ajustables en vivo (LSH, ANN, Bloom, Count-Min Sketch, DGIM y reglas).
+
 ## Cómo reproducir los notebooks
 1. Descargar los datos del SEACE/OCDS (ver "Fuente y licencia"). Los datos crudos (≈2.7 GB en CSV) y los Parquet **no están en el repositorio**.
 2. Instalar `requirements-notebooks.txt`.
 3. Ejecutar en este orden:
 
-| Notebook | Entorno | Motor |
-|---|---|---|
-| `B_00_Limpieza` | Laptop | Spark local |
-| `B_01_EDA_Spark` | Laptop | Spark local |
-| `B_01.1_similitud_minhash_lsh_final` | Colab | Spark local + Python |
-| `B_01.2_ann_ivf_hnsw_final` | Colab | Local (FAISS, scikit-learn) |
-| `B_02_Flujo` a `B_05_DGIM` | Laptop | Spark para leer y ordenar; sketches en Python puro |
-| `C_Parte5_Reglas_Asociacion` | Colab | Spark (RDD, DataFrame, FP-Growth) y Apriori con NumPy |
+| Notebook | Entorno | Motor | Por qué | Artefactos que exporta |
+|---|---|---|---|---|
+| `B_00_Limpieza` | Laptop | Spark local | Lee y une ~2.7 GB de CSV (incluye 2.5 millones de participaciones); Spark trabaja por columnas y en paralelo | 6 tablas Parquet y `web_artefactos/datos/reporte_calidad.json` |
+| `B_01_EDA_Spark` | Laptop | Spark local | Agregaciones sobre los Parquet | `artifacts/eda/*.csv` |
+| `B_01.1_similitud_minhash_lsh_final` | Colab | Spark local + Python | LSH con uniones por bandas en Spark (lo pide la tarea); el resto es Python | `web_artefactos/similitud/*.json` |
+| `B_01.2_ann_ivf_hnsw_final` | Colab | Local (FAISS, scikit-learn) | Los índices IVF y HNSW viven en la memoria de una sola máquina; Spark no aporta | `web_artefactos/ann/*.json` |
+| `B_02_Flujo` | Laptop | Spark para leer y ordenar; Python puro | Ordena por fecha de publicación para simular el flujo | prepara el flujo para B_03 a B_05 |
+| `B_03_Bloom_Filter` | Laptop | Python puro | Un sketch procesa un evento a la vez, en orden: es secuencial | `artifacts/bloom/*.csv` |
+| `B_04_Count_Min_Sketch` | Laptop | Python puro | Igual: procesamiento secuencial del flujo | `artifacts/cms/*.csv` |
+| `B_05_DGIM` | Laptop | Python puro | Igual: procesamiento secuencial del flujo | `artifacts/dgim/*.csv` |
+| `C_Parte5_Reglas_Asociacion` | Colab | Spark (RDD, DataFrame, FP-Growth) y Apriori con NumPy | FP-Growth de Spark MLlib sobre 196,158 transacciones; la comparación RDD frente a DataFrame es parte de la tarea | `artifacts/c/*` |
 
 Todo Spark corre en modo `local[*]`, no en un clúster.
+
+Los artefactos exportados son lo único que lee la página (`web/`): ella no ejecuta Spark.
 
 Rutas que debes ajustar:
 - Los notebooks `B_*` usan `Path.home() / "dm"`. Cambia `PROJECT_ROOT` a tu carpeta.
