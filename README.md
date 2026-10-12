@@ -4,7 +4,7 @@ Proyecto Integrador de Data Mining (UTEC) — Prof. Heider Sanchez.
 Datos: contrataciones públicas del SEACE en formato OCDS (OECE), enero 2024 a agosto 2026.
 
 **Integrantes:** Anthony Roca · Willian Berrocal · Jimena Mamani
-**Página web:** [enlace por agregar] · **Video de demostración:** [enlace por agregar]
+**Página web:** [https://seace-mineria.streamlit.app/] 
 
 ## ¿De qué trata?
 Una contratación pública deja mucho rastro: miles de procesos, textos de ítems, postores y adjudicaciones.
@@ -106,6 +106,3 @@ Algunos proveedores son personas naturales. Por eso:
 - No se probó un clúster real. Las conclusiones de escala (10×, 100×) son **estimaciones** y están marcadas como tales.
 - La comparación antes y después de la ley dentro de las reglas de asociación quedó abierta.
 - La comparación de igualdad entre Apriori y FP-Growth dio `False` (1,969 vs 2,005 itemsets). La causa probable es el límite de 5 ítems de Apriori (hipótesis, aún sin comprobar; ver página 8).
-
-## Licencia del código
-[por definir por el equipo]
