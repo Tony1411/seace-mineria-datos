@@ -1,0 +1,5 @@
+# Solo para ejecutar la página web (Python 3.11 o superior)
+numpy==2.4.6
+pandas==3.0.6
+plotly==7.1.0
+streamlit==1.65.0

@@ -1,0 +1,265 @@
+{
+ "meta": {
+  "titulo": "Reporte de calidad de la limpieza",
+  "fuente": "Salida de la sección 7 del notebook B_00_Limpieza (reporte_calidad.json) y de la sección 8",
+  "fecha_corte": "2026-09-03",
+  "periodo_analisis": "2024-01 a 2026-08"
+ },
+ "datos": {
+  "embudo": [
+   {
+    "etapa": "Filas leídas de main (3 archivos)",
+    "filas": 357729
+   },
+   {
+    "etapa": "Tras quitar duplicados por ocid",
+    "filas": 357729
+   },
+   {
+    "etapa": "Tras filtrar publicados desde 2024-01",
+    "filas": 210388
+   },
+   {
+    "etapa": "Tras excluir septiembre 2026 (mes parcial)",
+    "filas": 209740
+   }
+  ],
+  "calidad": [
+   {
+    "indicador": "Duplicados por ocid eliminados",
+    "campo": "main_ocid_duplicados_eliminados",
+    "valor": 0,
+    "base": 357729,
+    "porcentaje": 0.0,
+    "nota": "Un proceso aparece una sola vez"
+   },
+   {
+    "indicador": "Filas fuera del periodo (antes de 2024-01)",
+    "campo": "main_fuera_de_periodo",
+    "valor": 147341,
+    "base": 357729,
+    "porcentaje": 41.2,
+    "nota": "Se filtra por fecha de publicación"
+   },
+   {
+    "indicador": "Filas del mes parcial (septiembre 2026)",
+    "campo": "main_mes_parcial_excluido",
+    "valor": 648,
+    "base": 357729,
+    "porcentaje": 0.2,
+    "nota": "El corte es el 3 de septiembre"
+   },
+   {
+    "indicador": "Procesos con monto 0 (valor no disponible)",
+    "campo": "procesos_valor_cero",
+    "valor": 21718,
+    "base": 209740,
+    "porcentaje": 10.4,
+    "nota": "No entran en valor_pen_valido"
+   },
+   {
+    "indicador": "Procesos con información protegida por ley",
+    "campo": "procesos_info_protegida",
+    "valor": 22483,
+    "base": 209740,
+    "porcentaje": 10.7,
+    "nota": "Marcados en info_protegida"
+   },
+   {
+    "indicador": "Montos 0 que además son información protegida",
+    "campo": "procesos_valor_cero_y_protegido",
+    "valor": 16851,
+    "base": 21718,
+    "porcentaje": 77.6,
+    "nota": "78% de los montos 0"
+   },
+   {
+    "indicador": "Procesos con método sin dato",
+    "campo": "procesos_metodo_sin_dato",
+    "valor": 63135,
+    "base": 209740,
+    "porcentaje": 30.1,
+    "nota": "Por eso se usa procedimiento y no método"
+   },
+   {
+    "indicador": "Procesos sin n_postores declarado",
+    "campo": "procesos_n_postores_declarado_nulo",
+    "valor": 21449,
+    "base": 209740,
+    "porcentaje": 10.2,
+    "nota": "Se usa n_postores contado desde la tabla de postores"
+   },
+   {
+    "indicador": "Procesos sin adjudicación",
+    "campo": "procesos_sin_adjudicacion",
+    "valor": 49901,
+    "base": 209740,
+    "porcentaje": 23.8,
+    "nota": "El 92% está desierto, convocado o nulo"
+   },
+   {
+    "indicador": "Ítems sin código CUBSO",
+    "campo": "items_sin_cubso",
+    "valor": 39378,
+    "base": 243699,
+    "porcentaje": 16.2,
+    "nota": "Sobre el total de ítems"
+   },
+   {
+    "indicador": "Ítems sin código UNSPSC",
+    "campo": "items_sin_unspsc",
+    "valor": 39451,
+    "base": 243699,
+    "porcentaje": 16.2,
+    "nota": "Sobre el total de ítems"
+   },
+   {
+    "indicador": "Adjudicaciones sin proveedor",
+    "campo": "adjudicaciones_sin_proveedor",
+    "valor": 3235,
+    "base": 174908,
+    "porcentaje": 1.8,
+    "nota": "Sobre el total de adjudicaciones"
+   },
+   {
+    "indicador": "Adjudicaciones sin contrato vinculado",
+    "campo": "adjudicaciones_sin_contrato",
+    "valor": 28162,
+    "base": 174908,
+    "porcentaje": 16.1,
+    "nota": "El 92% está en consentido o adjudicado (contrato aún no firmado)"
+   },
+   {
+    "indicador": "Contratos sin adjudicación vinculada",
+    "campo": "contratos_sin_adjudicacion_vinculada",
+    "valor": 1693,
+    "base": 153272,
+    "porcentaje": 1.1,
+    "nota": "Sobre el total de contratos"
+   },
+   {
+    "indicador": "Postores duplicados eliminados",
+    "campo": "postores_duplicados_eliminados",
+    "valor": 0,
+    "base": 2493612,
+    "porcentaje": 0.0,
+    "nota": "Dedup por proceso y RUC"
+   },
+   {
+    "indicador": "Filas huérfanas en tablas hijas",
+    "campo": "filas_huerfanas",
+    "valor": 0,
+    "base": null,
+    "porcentaje": null,
+    "nota": "Se filtró con left_semi join"
+   }
+  ],
+  "nulos": [
+   {
+    "columna": "proyecto_id",
+    "pct_nulo": 59.7
+   },
+   {
+    "columna": "monto_adj_pen",
+    "pct_nulo": 23.8
+   },
+   {
+    "columna": "valor_pen_valido",
+    "pct_nulo": 10.4
+   },
+   {
+    "columna": "n_postores_declarado",
+    "pct_nulo": 10.2
+   },
+   {
+    "columna": "fecha_fin_conv",
+    "pct_nulo": 6.0
+   },
+   {
+    "columna": "fecha_inicio_conv",
+    "pct_nulo": 6.0
+   }
+  ],
+  "tablas": [
+   {
+    "tabla": "procesos",
+    "filas": 209740,
+    "columnas": 47,
+    "una_fila_por": "proceso de contratación",
+    "uso": "EDA, flujo por fecha_pub, texto para similitud"
+   },
+   {
+    "tabla": "items",
+    "filas": 243699,
+    "columnas": 17,
+    "una_fila_por": "ítem convocado (CUBSO, UNSPSC, estado)",
+    "uso": "Canastas de reglas y representación"
+   },
+   {
+    "tabla": "postores",
+    "filas": 2493612,
+    "columnas": 5,
+    "una_fila_por": "postor por proceso",
+    "uso": "Bloom Filter y Count-Min Sketch"
+   },
+   {
+    "tabla": "adjudicaciones",
+    "filas": 174908,
+    "columnas": 13,
+    "una_fila_por": "adjudicación (proveedor, estado, monto en soles)",
+    "uso": "Agregados por proceso"
+   },
+   {
+    "tabla": "contratos",
+    "filas": 153272,
+    "columnas": 16,
+    "una_fila_por": "contrato (estado, monto en soles)",
+    "uso": "Agregados por proceso"
+   },
+   {
+    "tabla": "entidades",
+    "filas": 2992,
+    "columnas": 8,
+    "una_fila_por": "entidad contratante (ubicación y tipo)",
+    "uso": "EDA territorial y canastas"
+   }
+  ],
+  "tipo_entidad": [
+   {
+    "tipo": "municipalidad",
+    "procesos": 87155,
+    "pct": 41.6
+   },
+   {
+    "tipo": "otro",
+    "procesos": 47551,
+    "pct": 22.7
+   },
+   {
+    "tipo": "gobierno_regional",
+    "procesos": 46117,
+    "pct": 22.0
+   },
+   {
+    "tipo": "salud",
+    "procesos": 9707,
+    "pct": 4.6
+   },
+   {
+    "tipo": "universidad",
+    "procesos": 8052,
+    "pct": 3.8
+   },
+   {
+    "tipo": "defensa_policia",
+    "procesos": 6881,
+    "pct": 3.3
+   },
+   {
+    "tipo": "ministerio",
+    "procesos": 4277,
+    "pct": 2.0
+   }
+  ]
+ }
+}

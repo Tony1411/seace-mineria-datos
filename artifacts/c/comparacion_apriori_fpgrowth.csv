@@ -1,0 +1,4 @@
+algoritmo,n_trans,min_sup,n_itemsets,t_s
+apriori_muestra,30188,0.02,1969,1.6836201209998762
+fpgrowth_muestra,30188,0.02,2005,7.734358595999993
+fpgrowth_completo,196158,0.01,5002,15.642623977000085

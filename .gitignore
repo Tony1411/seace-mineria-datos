@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+# Datos crudos y Parquet (pesan GB; se descargan de la fuente)
+data/
+raw/
+*.parquet
+*.csv.gz
+*.zip

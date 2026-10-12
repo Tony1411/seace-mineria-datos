@@ -1,0 +1,13 @@
+antecedente,consecuente,soporte,confianza,lift,k_ant,k_cons,trivial_ley_proc,mismo_tipo,sup_consecuente
+monto=protegido & postores=0,estado=DESIERTO,0.010863691513983625,0.386611030478955,3.001299925466632,2,1,False,False,0.12881452706491706
+ley=anterior & monto=protegido & postores=0,estado=DESIERTO,0.010221352175287269,0.37966294262450295,2.9473612276134737,3,1,False,False,0.12881452706491706
+postores=0,estado=DESIERTO,0.015987112429775997,0.354510513226317,2.7521004137030194,1,1,False,False,0.12881452706491706
+ley=anterior & postores=0,estado=DESIERTO,0.012918157811560069,0.32011116725619,2.4850548657052287,2,1,False,False,0.12881452706491706
+ley=anterior & postores=0 & tipo=municipalidad,estado=NULO,0.011959746734775028,0.6229421136484333,10.29097853537556,3,1,False,False,0.060532835775242405
+postores=0 & tipo=municipalidad,estado=NULO,0.012602086073471385,0.5950890707751565,9.830847393053155,2,1,False,False,0.060532835775242405
+monto=protegido,ley=anterior & postores=0,0.02692217498139255,0.6919549266247379,17.146601123907953,1,2,False,False,
+ley=anterior & postores=0,monto=protegido,0.02692217498139255,0.6671298635674583,17.14660112390795,2,1,False,False,0.038907411372465055
+ley=anterior & monto=protegido,postores=0,0.02692217498139255,0.7243176518996022,16.06157607521164,2,1,False,False,0.04509629992149186
+postores=0,ley=anterior & monto=protegido,0.02692217498139255,0.5969929911824553,16.06157607521164,1,2,False,False,
+cat=services & ley=anterior & proc=Regímen Especial & tipo=otro,dep=LIMA & estado=CONTRATADO & monto=Q1_bajo & postores=1 & seg=80,0.010042924581204947,0.8790718429272646,53.83608322351745,4,5,False,False,
+cat=services & estado=CONTRATADO & ley=anterior & proc=Regímen Especial & tipo=otro,dep=LIMA & monto=Q1_bajo & postores=1 & seg=80,0.010042924581204947,0.9661598822952427,53.25091042182361,5,4,False,False,

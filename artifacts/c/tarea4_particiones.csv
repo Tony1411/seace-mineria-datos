@@ -1,0 +1,11 @@
+estrategia,n_part,t_min_s
+repartition(n),1,0.8390072499998951
+repartition(n),2,0.8547349890000078
+repartition(n),4,0.6332970819998991
+repartition(n),8,0.7190666970000166
+repartition(n),16,1.085252115000003
+repartition(n),64,2.01974419499993
+repartition(n),200,4.127918722999993
+"repartition(n, dep)",4,0.3029175320000377
+"repartition(n, dep)",8,0.34761264200005826
+"repartition(n, dep)",16,0.4352153649999764

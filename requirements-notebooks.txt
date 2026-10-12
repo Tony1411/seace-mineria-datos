@@ -1,0 +1,13 @@
+# Para reproducir los notebooks (incluye la web)
+ipykernel==7.4.0
+jupyterlab==4.6.4
+matplotlib==3.11.2
+numpy==2.4.6
+pandas==3.0.6
+plotly==7.1.0
+pyarrow==25.0.1
+pyspark==3.5.3
+streamlit==1.65.0
+# Solo el notebook B_01.2 (ANN); en Colab ya viene o se instala con pip
+# faiss-cpu
+# scikit-learn
