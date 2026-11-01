@@ -1,0 +1,1026 @@
+{
+ "meta": {
+  "proveedores_indexados": 9833,
+  "entidades": 2331,
+  "dim": 512,
+  "hnsw": {
+   "M": 32,
+   "efConstruction": 100,
+   "efSearch": 64,
+   "recall_10_vs_exacta": 0.9883
+  },
+  "solape_tfidf_vs_512": 0.616,
+  "textos_por_proveedor_max": 30,
+  "fecha_corte": "2026-03-01"
+ },
+ "ejemplos": [
+  {
+   "entidad": "GOBIERNO REGIONAL DE PUNO- HOSPITAL REGIONAL MANUEL NUÑEZ BUTRON",
+   "tipo": "gobierno_regional",
+   "departamento": "PUNO",
+   "proveedores_actuales": [
+    {
+     "nombre": "DIAGNOSTICA PERUANA S.A.C.",
+     "n_adjudicaciones": 5,
+     "palabras_clave": "cesion de, uso para, de patologia, en cesion, patologia"
+    },
+    {
+     "nombre": "SISTEMAS ANALITICOS SRL",
+     "n_adjudicaciones": 4,
+     "palabras_clave": "de sangre, sangre, en cesion, cesion, reactivos"
+    },
+    {
+     "nombre": "AIR MAJORO SOCIEDAD ANONIMA",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "referido, paciente sis, aerea, provincia distrito, maldonado provincia"
+    },
+    {
+     "nombre": "IMPORT & EXPORT PROINSA SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "basadre grohmann, grohmann, nacional jorge, junio 2026, beneficiarios comensales"
+    },
+    {
+     "nombre": "Persona natural (RUC 10012****36)",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "de verduras, de frutas, altiplano puno, puno suministro, verduras"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "MEDIFARMA S A",
+     "score": 0.396,
+     "palabras_clave": "farmaceuticos compra, 100 ml, farmaceuticos, productos farmaceuticos, abastecimiento por"
+    },
+    {
+     "nombre": "PHARMA HOSTING PERU SAC",
+     "score": 0.39,
+     "palabras_clave": "pulmonar, origen natural, de origen, origen, 3ml"
+    },
+    {
+     "nombre": "UNILENE S.A.C.",
+     "score": 0.383,
+     "palabras_clave": "sutura, mm 70, 70 cm, medicos compra, cm"
+    },
+    {
+     "nombre": "GREY INVERSIONES S.A.C.",
+     "score": 0.368,
+     "palabras_clave": "albumina humana, albumina, de albumina, 50 ml, 20g"
+    },
+    {
+     "nombre": "FARMACHIF S.R.L.",
+     "score": 0.36,
+     "palabras_clave": "farmaceuticos compra, meses treinta, farmaceuticos, productos farmaceuticos, sectorial para"
+    },
+    {
+     "nombre": "EROSMEDIC S.A.C.",
+     "score": 0.356,
+     "palabras_clave": "guante, esteril, talla, descartable, de guante"
+    },
+    {
+     "nombre": "PROVEEDORES Y SERVICIOS V & V S.A.",
+     "score": 0.352,
+     "palabras_clave": "essalud por, meses material, material medico, de essalud, items"
+    },
+    {
+     "nombre": "CORPORACION DAFER MEDIC S.A.C.",
+     "score": 0.352,
+     "palabras_clave": "epoetina alfa, epoetina, alfa, 2000 ui, de epoetina"
+    },
+    {
+     "nombre": "ALKHOFAR SOCIEDAD ANONIMA CERRADA",
+     "score": 0.351,
+     "palabras_clave": "guantes, guantes quirurgicos, de guantes, guante, quirurgicos"
+    },
+    {
+     "nombre": "SURGICORP SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA - SURGICORP S.R.L.",
+     "score": 0.347,
+     "palabras_clave": "traumatologia, craneotomo, neurocirugia del, traumatologia del, de neurocirugia"
+    }
+   ]
+  },
+  {
+   "entidad": "SERVICIO DE AGUA POTABLE Y ALCANTARILLADO MUNICIPAL DE HUANCAYO",
+   "tipo": "otro",
+   "departamento": "JUNIN",
+   "proveedores_actuales": [
+    {
+     "nombre": "ASOCIE INSTRUMENTOS E.I.R.L.",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "medidores, medidores de, de medidores, chorro multiple, regulatorio"
+    },
+    {
+     "nombre": "FIBERTEL INGENIEROS SOCIEDAD ANONIMA CERRADA",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "continuidad operativa, un servidor, la continuidad, sedam huancayo, sedam"
+    },
+    {
+     "nombre": "Persona natural (RUC 10200****29)",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "para funcionarios, casacas de, femenino masculino, cuero para, de casacas"
+    },
+    {
+     "nombre": "LA POSITIVA SEGUROS Y REASEGUROS S.A.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "seguros patrimoniales, patrimoniales, seguros, de seguros, patrimoniales para"
+    },
+    {
+     "nombre": "MAPFRE PERU COMPAÑIA DE SEGUROS Y REASEGUROS",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "de seguro, personales, seguros, de seguros, accidentes"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "BOOS S.A.C.",
+     "score": 0.365,
+     "palabras_clave": "dn, medidores de, medidores, dn 15, dn 15mm"
+    },
+    {
+     "nombre": "MONTESIEMPRE SEGURIDAD Y SERVICIOS GENERALES S.A.C.",
+     "score": 0.332,
+     "palabras_clave": "santa gema, gema de, gema, seguridad vigilancia, de yurimaguas"
+    },
+    {
+     "nombre": "Persona natural (RUC 10806****95)",
+     "score": 0.309,
+     "palabras_clave": "de amotape, amotape, de piura, paita, bigote"
+    },
+    {
+     "nombre": "EMP. DE TRANSPORTES MARON EIRL",
+     "score": 0.308,
+     "palabras_clave": "chen, de moquegua, nieto departamento, granular para, material granular"
+    },
+    {
+     "nombre": "REPRESENTACIONES GENERALES CARLOS UYEN E.I.R.L.",
+     "score": 0.308,
+     "palabras_clave": "de pierola, pierola, nicolas de, camana, de nicolas"
+    },
+    {
+     "nombre": "AUTOPASA E.I.R.L.",
+     "score": 0.299,
+     "palabras_clave": "canete adquisicion, canete, de canete, de combustible, yauyos adquisicion"
+    },
+    {
+     "nombre": "SERVICIOS GENERALES VALENTIN SCORPIO SOCIEDAD ANONIMA CERRADA",
+     "score": 0.297,
+     "palabras_clave": "seguridad vigilancia, vigilancia para, vigilancia, sierra selva, proyecto ptrt3"
+    },
+    {
+     "nombre": "EUROFLOW E.I.R.L.",
+     "score": 0.291,
+     "palabras_clave": "chorro unico, chorro, medidores, conexiones, regulatorio 2023"
+    },
+    {
+     "nombre": "OPERACIONES TACTICAS DE SEGURIDAD SOCIEDAD ANONIMA - OTA SEG S.A.",
+     "score": 0.29,
+     "palabras_clave": "laboratorio costero, costero de, seguridad vigilancia, vigilancia, vigilancia para"
+    },
+    {
+     "nombre": "Q Y Q CONSULTORES Y EJECUTORES S.A.C",
+     "score": 0.288,
+     "palabras_clave": "de lambayeque, de olmos, lambayeque, olmos, lambayeque departamento"
+    }
+   ]
+  },
+  {
+   "entidad": "MUNICIPALIDAD DISTRITAL DE SANTA MARIA",
+   "tipo": "municipalidad",
+   "departamento": "LIMA",
+   "proveedores_actuales": [
+    {
+     "nombre": "NEGOCIOS SILVESTRE E.I.R.L",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "vaso de, vaso, de leche, leche, leche del"
+    },
+    {
+     "nombre": "ESTACION DE SERVICIOS HUAURA SOCIEDAD ANONIMA CERRADA",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "huaura, de huaura, combustible, de combustible, flota vehicular"
+    },
+    {
+     "nombre": "TERNOS MONETT S.A.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "uniforme institucional, invierno, verano, uniforme, de uniforme"
+    },
+    {
+     "nombre": "F.P. TECNOLOGI Y SYSTEM S.A.C",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "equipos tecnologicos, de cui, tecnologicos para, drone, ioarr de"
+    },
+    {
+     "nombre": "PEDRO PABLO MARTINEZ INFANTES INGENIERIA Y SERVICIOS GENERALES EIRL",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "matriz de, red matriz, matriz, domiciliarias de, conexiones domiciliarias"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "KAYPI INVERSIONES PERU E.I.R.L.",
+     "score": 0.498,
+     "palabras_clave": "programa social, vaso de, vaso, de leche, leche"
+    },
+    {
+     "nombre": "INDUSTRIAS DE ALIMENTOS DEL PERU S.A.C.",
+     "score": 0.486,
+     "palabras_clave": "vaso de, vaso, de leche, leche, huaura correspondiente"
+    },
+    {
+     "nombre": "EMPRESA NIVARIA GROUP S.A.C",
+     "score": 0.485,
+     "palabras_clave": "vaso de, vaso, leche, programa del, de leche"
+    },
+    {
+     "nombre": "Persona natural (RUC 10074****61)",
+     "score": 0.485,
+     "palabras_clave": "de ambar, ambar, vaso de, vaso, de leche"
+    },
+    {
+     "nombre": "INVERSIONES MADARO EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "score": 0.478,
+     "palabras_clave": "el vaso, social para, de pinra, adquicicion de, vaso de"
+    },
+    {
+     "nombre": "MULTYSERVICIOS LA HUAKA E.I.R.L.",
+     "score": 0.477,
+     "palabras_clave": "yarumayo, vaso de, vaso, entera 170, leche"
+    },
+    {
+     "nombre": "FORTIFIED FOODS S.A.C.",
+     "score": 0.475,
+     "palabras_clave": "vaso de, vaso, de leche, leche, insumos alimenticios"
+    },
+    {
+     "nombre": "INVERSIONES MARYSA S.A.C.",
+     "score": 0.464,
+     "palabras_clave": "alimentos insumos, perido, lucuma, vaso de, vaso"
+    },
+    {
+     "nombre": "INVERSIONES LUANUTRIT SOCIEDAD ANONIMA CERRADA-INLU S.A.C.",
+     "score": 0.464,
+     "palabras_clave": "vaso de, vaso, de leche, leche, los beneficiarios"
+    },
+    {
+     "nombre": "DISANPE SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA - DISANPE S.R.L.",
+     "score": 0.464,
+     "palabras_clave": "vaso de, vaso, de leche, leche, programa vaso"
+    }
+   ]
+  },
+  {
+   "entidad": "MUNICIPALIDAD DISTRITAL DE SAN JUAN DE BIGOTE",
+   "tipo": "municipalidad",
+   "departamento": "PIURA",
+   "proveedores_actuales": [
+    {
+     "nombre": "CORPORACION AGROINDUSTRIAL PIURA S.R.L.",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "canihua almidon, trigo quinua, quinua canihua, almidon, almidon de"
+    },
+    {
+     "nombre": "CORPORACION DE DISTRIBUCIONES Y SERVICIOS DEL NORTE S.A.C.",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "vaso de, vaso, leche, de leche, evaporada entera"
+    },
+    {
+     "nombre": "GA INGENIEROS CONSTRUCTORES S.A.C.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "piura, morropon, de piura, estructura de, de morropon"
+    },
+    {
+     "nombre": "PROYECTOS, CONSULTORIA Y SERVICIOS LUCKY S.A.C",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "inicial servicio, primaria servicio, matanza, la matanza, reformulacion de"
+    },
+    {
+     "nombre": "Persona natural (RUC 10806****95)",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "de amotape, amotape, de piura, paita, bigote"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "Persona natural (RUC 10026****55)",
+     "score": 0.466,
+     "palabras_clave": "leche, vaso de, de leche, vaso, evaporada entera"
+    },
+    {
+     "nombre": "DISTRIBUIDORA COMERCIALIZADORA DE ALIMENTOS SICAN E.I.R.L.",
+     "score": 0.424,
+     "palabras_clave": "vaso de, vaso, bienes hojuela, tostada con, soya integral"
+    },
+    {
+     "nombre": "MULTYSERVICIOS EDIHCA E.I.R.L.",
+     "score": 0.419,
+     "palabras_clave": "maca chia, vaso de, vaso, chia cebada, leche"
+    },
+    {
+     "nombre": "EMPRESA NIVARIA GROUP S.A.C",
+     "score": 0.418,
+     "palabras_clave": "vaso de, vaso, leche, programa del, de leche"
+    },
+    {
+     "nombre": "JAEN DISTRIBUCIONES S.A.C.",
+     "score": 0.418,
+     "palabras_clave": "vaso de, vaso, cutervo cajamarca, leche, programa vaso"
+    },
+    {
+     "nombre": "PROCESADORA INDURLAC E.I.R.L.",
+     "score": 0.417,
+     "palabras_clave": "quinua trigo, vaso de, vaso, alimenticio para, enriquecida con"
+    },
+    {
+     "nombre": "AGROINDUSTRIAS YON YANG SRLTDA",
+     "score": 0.414,
+     "palabras_clave": "con vitaminas, vitaminas, vitaminas minerales, minerales, vaso de"
+    },
+    {
+     "nombre": "AGRONEGOCIOS & CIA S.A.C.",
+     "score": 0.412,
+     "palabras_clave": "vaso de, vaso, leche, programa vaso, de leche"
+    },
+    {
+     "nombre": "ALIMENTOS INDUSTRIALIZADOS DEL SUR EMPRESA INDIVIDUAL DE RESPONSAB. LTDA.",
+     "score": 0.41,
+     "palabras_clave": "leche, vaso, vaso de, de leche, programa vaso"
+    },
+    {
+     "nombre": "COMERCIALIZADORA Y DISTRIBUIDORA VAIDNE E.I.R.L.",
+     "score": 0.409,
+     "palabras_clave": "leche, vaso de, vaso, de leche, evaporada entera"
+    }
+   ]
+  },
+  {
+   "entidad": "PROYECTO ESPECIAL DE INVERSION PUBLICA ESCUELAS BICENTENARIO",
+   "tipo": "otro",
+   "departamento": "LIMA",
+   "proveedores_actuales": [
+    {
+     "nombre": "PROFILE CONSULTING GROUP SOCIEDAD ANONIMA CERRADA - PROFILE CONSULTING GROUP S.A.C.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "autodesk, autocad, collection, engineering, architecture engineering"
+    },
+    {
+     "nombre": "ENTEL PERU S.A.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "telefonia movil, de telefonia, telefonia, movil, movil para"
+    },
+    {
+     "nombre": "MAPFRE PERU S.A. ENTIDAD PRESTADORA DE SALUD",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "seguro complementario, complementario de, riesgo salud, trabajo de, sctr salud"
+    },
+    {
+     "nombre": "PACIFICO COMPAÑIA DE SEGUROS Y REASEGUROS",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "seguro de, de seguros, seguros, personales, de seguro"
+    },
+    {
+     "nombre": "DAILY TECHNOLOGY S.A.C.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "correo, office 365, correo electronico, nube, office"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "XERTICA LABS SOCIEDAD ANONIMA CERRADA - XERTICA LABS S.A.C.",
+     "score": 0.467,
+     "palabras_clave": "colaborativas en, herramientas colaborativas, correo, colaborativas, correo electronico"
+    },
+    {
+     "nombre": "64BYTE S.A.C.",
+     "score": 0.422,
+     "palabras_clave": "servicio civil, de correo, correo, servir traves, digital distrito"
+    },
+    {
+     "nombre": "BIGSECURE S.A.C.",
+     "score": 0.403,
+     "palabras_clave": "nube, correo, perimetral, microsoft, correo electronico"
+    },
+    {
+     "nombre": "INFORMACION LOCALIZADA S.A.S. - SUCURSAL DEL PERU",
+     "score": 0.367,
+     "palabras_clave": "google, colaboracion, workspace, de google, google workspace"
+    },
+    {
+     "nombre": "ITG SOLUTIONS SOCIEDAD ANONIMA CERRADA",
+     "score": 0.343,
+     "palabras_clave": "nube para, nube, la nube, infraestructura tecnologica, en nube"
+    },
+    {
+     "nombre": "NOVENTIQ INTERNATIONAL PERU S.A.C.",
+     "score": 0.339,
+     "palabras_clave": "microsoft, sql server, sql, server, correo electronico"
+    },
+    {
+     "nombre": "XENTIC S.A.C.",
+     "score": 0.319,
+     "palabras_clave": "licencia de, licencia, software, de licencias, de suscripcion"
+    },
+    {
+     "nombre": "QUBITS CONSULTING S.A.C.",
+     "score": 0.319,
+     "palabras_clave": "nube, nube para, nube publica, la nube, de nube"
+    },
+    {
+     "nombre": "AGGITY PERU S.A.C.",
+     "score": 0.316,
+     "palabras_clave": "perimetral para, perimetral, seguridad informatica, seguridad perimetral, garantia"
+    },
+    {
+     "nombre": "ARPYNET SAC",
+     "score": 0.31,
+     "palabras_clave": "correo, correo electronico, nube, nube con, colaborativo"
+    }
+   ]
+  },
+  {
+   "entidad": "MUNICIPALIDAD PROVINCIAL DE LAMAS",
+   "tipo": "municipalidad",
+   "departamento": "SAN MARTIN",
+   "proveedores_actuales": [
+    {
+     "nombre": "CORPORACION DE ALIMENTOS VAPA S.A.C.",
+     "n_adjudicaciones": 7,
+     "palabras_clave": "militar mariscal, estudiantes cadetes, iepm colegio, iepm, lamas para"
+    },
+    {
+     "nombre": "GRIFO RURAL EL PINTEÑO EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "de pinto, recodo, pinto recodo, pinto, maquinaria de"
+    },
+    {
+     "nombre": "ORVISA SOCIEDAD ANONIMA",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "3412, 01 motoniveladora, caterpillar, el dorado, de retroexcavadora"
+    },
+    {
+     "nombre": "MEJIA & M GROUP S.A.C.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "lamas para, fortificado grado, grado superior, de rioja, arroz fortificado"
+    },
+    {
+     "nombre": "EMPRESA DE COMERCIALIZACION DE ALIMENTOS SHILCAYO S.A.C.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "vaso de, vaso, marzo diciembre, de leche, leche"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "DISTRIBUIDORA CENTRAL EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "score": 0.418,
+     "palabras_clave": "complementacion alimentaria, de complementacion, complementacion, tarma para, concepcion adquisicion"
+    },
+    {
+     "nombre": "MULTISERVICIOS J Y EM GROUP SERVICE EIRL",
+     "score": 0.402,
+     "palabras_clave": "fortificado grado, grado superior, arroz fortificado, fortificado, superior para"
+    },
+    {
+     "nombre": "INVERSIONES SOPHIA DEL MILAGRO S.A.C.",
+     "score": 0.384,
+     "palabras_clave": "fortificado grado, grado superior, arroz fortificado, de angaraes, pca"
+    },
+    {
+     "nombre": "COORPORACION  BRAVO PONCE EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "score": 0.381,
+     "palabras_clave": "vaso de, vaso, de amarilis, de leche, leche"
+    },
+    {
+     "nombre": "GRUPO HEVIMO S.A.C.",
+     "score": 0.38,
+     "palabras_clave": "de rioja, de arroz, arroz, rioja, en riesgo"
+    },
+    {
+     "nombre": "Persona natural (RUC 10011****26)",
+     "score": 0.378,
+     "palabras_clave": "entero vivo, vivo, de picota, pollo entero, sociales nutricion"
+    },
+    {
+     "nombre": "AGROINDUSTRIA LA PERLA DEL HUASCARAN S.R.L.",
+     "score": 0.378,
+     "palabras_clave": "vaso de, vaso, de leche, leche, fiscal 2026"
+    },
+    {
+     "nombre": "CENTAURO ENTERPRISE S.A.C.",
+     "score": 0.374,
+     "palabras_clave": "alimentaria de, huanuco adquisicion, vaso de, vaso, programa vaso"
+    },
+    {
+     "nombre": "INDUSTRIAS COPSA E.I.R.L.",
+     "score": 0.373,
+     "palabras_clave": "nacionales regionales, ajonjoli fortificadas, blanca entera, quinua blanca, productos nacionales"
+    },
+    {
+     "nombre": "MULTYSERVICIOS LA HUAKA E.I.R.L.",
+     "score": 0.365,
+     "palabras_clave": "yarumayo, vaso de, vaso, entera 170, leche"
+    }
+   ]
+  },
+  {
+   "entidad": "GOBIERNO REGIONAL DE PIURA-EDUCACION",
+   "tipo": "gobierno_regional",
+   "departamento": "PIURA",
+   "proveedores_actuales": [
+    {
+     "nombre": "REINGENIERIA & VIGILANCIA DEL PERU SOCIEDAD ANONIMA CERRADA",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "seguridad vigilancia, sullana, vigilancia, vigilancia para, zonal piura"
+    },
+    {
+     "nombre": "Persona natural (RUC 10710****37)",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "ejecutora 300, piura la, la distribucion, cada, carga para"
+    },
+    {
+     "nombre": "CONECTANDO SELVA E.I.R.L.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "los institutos, institutos de, institutos, virtual, piura 2025"
+    },
+    {
+     "nombre": "Persona natural (RUC 10027****06)",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "dotacion 2025, la distribucion, dotacion, distribucion de, modulado transporte"
+    },
+    {
+     "nombre": "FULL TEXTIL E.I.R.L.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "docentes de, docentes, indumentaria, entregados, educativo virtual"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "SERVICIOS GENERALES VELATA E.I.R.L.",
+     "score": 0.343,
+     "palabras_clave": "educativos dotacion, transporte modulado, modulado traslado, material educativo, distribucion de"
+    },
+    {
+     "nombre": "LOGISTICO JP E.I.R.L.",
+     "score": 0.312,
+     "palabras_clave": "distribucion de, distribucion, materiales educativos, la distribucion, de transporte"
+    },
+    {
+     "nombre": "R Y D CONTRATACIONES Y SERVICIOS E.I.R.L - RDCS E.I.R.L",
+     "score": 0.304,
+     "palabras_clave": "biblioteca virtual, institutos de, institutos, virtual para, tecnologicos publicos"
+    },
+    {
+     "nombre": "WARMI INVERSIONES S.A.C.",
+     "score": 0.3,
+     "palabras_clave": "indumentaria, educativo virtual, de iiee, secundario publico, identificacion para"
+    },
+    {
+     "nombre": "RIOS DEL ORIENTE SERVICIOS GENERALES S.A.C.",
+     "score": 0.286,
+     "palabras_clave": "rotulado transporte, modulado rotulado, de modulado, rotulado, transporte distribucion"
+    },
+    {
+     "nombre": "Persona natural (RUC 10329****86)",
+     "score": 0.285,
+     "palabras_clave": "distribucion de, transporte modulado, modulado traslado, ugel santa, traslado distribucion"
+    },
+    {
+     "nombre": "CENTRO DE INVESTIGACION Y DESARROLLO VIRTUAL E.I.R.L.",
+     "score": 0.282,
+     "palabras_clave": "plataforma virtual, los institutos, virtual, tecnologicos de, institutos de"
+    },
+    {
+     "nombre": "Persona natural (RUC 10190****24)",
+     "score": 0.279,
+     "palabras_clave": "de tuberculosis, biologicas, el diagnostico, diagnostico de, de muestras"
+    },
+    {
+     "nombre": "INSTITUTO DE DESARROLLO ECONOMICO Y SOCIAL S.A.C. IDEAS S.A.C.",
+     "score": 0.277,
+     "palabras_clave": "biblioteca virtual, virtual, biblioteca, institutos de, institutos"
+    },
+    {
+     "nombre": "SERVICIOS MULTIMODAL SANTA LUCIA E.I.R.L.",
+     "score": 0.256,
+     "palabras_clave": "educativos las, distriro, distriro de, transporte distribucion, dotacion 2026"
+    }
+   ]
+  },
+  {
+   "entidad": "MUNICIPALIDAD DISTRITAL DE SAN PEDRO DE CACHORA",
+   "tipo": "municipalidad",
+   "departamento": "APURIMAC",
+   "proveedores_actuales": [
+    {
+     "nombre": "ROKA TRAVEL EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "ton, camioneta, camion, 4x4, camion baranda"
+    },
+    {
+     "nombre": "INDUSTRIAS ALIMENTARIAS MIXSULACTY EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA-INDUAL MIXSULACTY",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "programa social, vaso de, vaso, extruidas de, extruidas"
+    },
+    {
+     "nombre": "CONSTRUCTORA Y CONSULTORA ECOSULLCC INGENIEROS E.I.R.L.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "ap, moyorcco, ejecucion para, apurimac de, 619"
+    },
+    {
+     "nombre": "COMERCIALES Y DISTRIBUCIONES VALLE SUR EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "programa social, vaso de, vaso, leche, de leche"
+    },
+    {
+     "nombre": "Persona natural (RUC 10772****91)",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "suministros alimenticios, vaso de, vaso, ajonjoli maca, de leche"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "AGROINDUSTRIAS LATINO E.I.R.L.",
+     "score": 0.601,
+     "palabras_clave": "vaso, programa social, vaso de, de harinas, leche"
+    },
+    {
+     "nombre": "BIOPRODUCE SOCIEDAD ANONIMA CERRADA",
+     "score": 0.6,
+     "palabras_clave": "vaso de, vaso, leche, de leche, de antabamba"
+    },
+    {
+     "nombre": "PRODUCTOS NUESTRA TIERRA EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "score": 0.599,
+     "palabras_clave": "programa social, vaso de, vaso, de leche, leche de"
+    },
+    {
+     "nombre": "INDUSTRIA ALIMENTICIA IMPERIAL E.I.R.L.",
+     "score": 0.592,
+     "palabras_clave": "programa social, vaso de, vaso, leche, de leche"
+    },
+    {
+     "nombre": "ALIMENTOS AYNI PERU S.A.C.",
+     "score": 0.588,
+     "palabras_clave": "vaso, vaso de, de leche, leche, extruidas"
+    },
+    {
+     "nombre": "R & V QUALITY BUSINESS SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA - RVQUALITYB S.R.L",
+     "score": 0.584,
+     "palabras_clave": "vaso de, vaso, leche, de leche, insumos alimentarios"
+    },
+    {
+     "nombre": "MULTISERVIS S & R SHIMIZU SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA",
+     "score": 0.575,
+     "palabras_clave": "de punos, punos, vaso de, vaso, programa vaso"
+    },
+    {
+     "nombre": "CREA ALIMENTOS S.A.C.",
+     "score": 0.569,
+     "palabras_clave": "vaso, vaso de, leche, de leche, ajonjoli"
+    },
+    {
+     "nombre": "AGRO QUINACHO E.I.R.L.",
+     "score": 0.565,
+     "palabras_clave": "vaso de, vaso, de leche, leche, de bellido"
+    },
+    {
+     "nombre": "COMERCIALES Y DISTRIBUCIONES QORI D´LUCE EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "score": 0.565,
+     "palabras_clave": "programa social, vaso de, vaso, de leche, leche"
+    }
+   ]
+  },
+  {
+   "entidad": "MUNICIPALIDAD DISTRITAL DE CORRALES",
+   "tipo": "municipalidad",
+   "departamento": "TUMBES",
+   "proveedores_actuales": [
+    {
+     "nombre": "CORPORACION AGROINDUSTRIAL PIURA S.R.L.",
+     "n_adjudicaciones": 4,
+     "palabras_clave": "canihua almidon, trigo quinua, quinua canihua, almidon, almidon de"
+    },
+    {
+     "nombre": "CORPORACION DE DISTRIBUCIONES Y SERVICIOS DEL NORTE S.A.C.",
+     "n_adjudicaciones": 4,
+     "palabras_clave": "vaso de, vaso, leche, de leche, evaporada entera"
+    },
+    {
+     "nombre": "GANIMEDES E.I.R.L.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "de tumbes, tumbes, canal aductor, dren la, metalicos en"
+    },
+    {
+     "nombre": "EDIFICACIONES & CONSTRUCCIONES ALANA E.I.R.L.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "aguas verdes, verdes provincia, de zarumilla, damnificadas, afectadas damnificadas"
+    },
+    {
+     "nombre": "Persona natural (RUC 10181****61)",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "zarumilla, de zarumilla, asc, tramo entre, de paita"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "ALIMENTOS UTCUBAMBA E.I.R.L",
+     "score": 0.456,
+     "palabras_clave": "enero diciembre, vaso de, vaso, leche, producto alimentario"
+    },
+    {
+     "nombre": "ALEMARO E.I.R.L.",
+     "score": 0.432,
+     "palabras_clave": "precocida fortificada, avena quinua, hojuelas de, vaso de, vaso"
+    },
+    {
+     "nombre": "CORPORACION DE LOS ANDES E.I.R.L.",
+     "score": 0.427,
+     "palabras_clave": "bienes alimenticios, los bienes, para atender, atender, atender los"
+    },
+    {
+     "nombre": "AGROINDUSTRIAS SANTA ROSA DE LIMA S.R.L.",
+     "score": 0.423,
+     "palabras_clave": "vaso de, vaso, minerales de, leche, de leche"
+    },
+    {
+     "nombre": "ESPIGA DORADA  SRL",
+     "score": 0.421,
+     "palabras_clave": "hojuelas, hojuelas precocidas, para atender, precocidas de, atender"
+    },
+    {
+     "nombre": "MULTYSERVICIOS EDIHCA E.I.R.L.",
+     "score": 0.416,
+     "palabras_clave": "maca chia, vaso de, vaso, chia cebada, leche"
+    },
+    {
+     "nombre": "CREA ALIMENTOS S.A.C.",
+     "score": 0.416,
+     "palabras_clave": "vaso, vaso de, leche, de leche, ajonjoli"
+    },
+    {
+     "nombre": "CONSULTORIA & GESTION BIONUTRICIONAL SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA",
+     "score": 0.415,
+     "palabras_clave": "harina extruida, extruida, extruida de, vaso de, vaso"
+    },
+    {
+     "nombre": "JAEN DISTRIBUCIONES S.A.C.",
+     "score": 0.414,
+     "palabras_clave": "vaso de, vaso, cutervo cajamarca, leche, programa vaso"
+    },
+    {
+     "nombre": "NEGOCIOS Y SERVICIOS SANTA LUCIA  S.R.L.",
+     "score": 0.414,
+     "palabras_clave": "vaso de, vaso, leche, de leche, alimentos leche"
+    }
+   ]
+  },
+  {
+   "entidad": "GOBIERNO REGIONAL DE SAN MARTIN - UNIDAD EJECUTORA HOSPITAL II-2 TARAPOTO",
+   "tipo": "gobierno_regional",
+   "departamento": "SAN MARTIN",
+   "proveedores_actuales": [
+    {
+     "nombre": "DIAGNOSTICA PERUANA S.A.C.",
+     "n_adjudicaciones": 12,
+     "palabras_clave": "cesion de, uso para, de patologia, en cesion, patologia"
+    },
+    {
+     "nombre": "Persona natural (RUC 10481****32)",
+     "n_adjudicaciones": 8,
+     "palabras_clave": "tarapoto contratacion, ii tarapoto, eviscerado, con menudencia, dietetica de"
+    },
+    {
+     "nombre": "LA ZOOTECNIA E.I.R.L.",
+     "n_adjudicaciones": 6,
+     "palabras_clave": "dietetica de, especializada hospital, tarapoto por, ogess especializada, derivados para"
+    },
+    {
+     "nombre": "SISTEMAS ANALITICOS SRL",
+     "n_adjudicaciones": 6,
+     "palabras_clave": "de sangre, sangre, en cesion, cesion, reactivos"
+    },
+    {
+     "nombre": "H REPS S.A.C.",
+     "n_adjudicaciones": 5,
+     "palabras_clave": "dialisis peritoneal, peritoneal, dialisis, para dialisis, de dialisis"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "FORDAIS GROUP S.A.C.",
+     "score": 0.339,
+     "palabras_clave": "ii jose, portuguez, portuguez tocache, pena portuguez, jose pena"
+    },
+    {
+     "nombre": "LABIN PERU S.A.",
+     "score": 0.338,
+     "palabras_clave": "bioquimica, de bioquimica, bioquimica con, reactivos de, bioquimica para"
+    },
+    {
+     "nombre": "PAPA TIM S.A.C.",
+     "score": 0.333,
+     "palabras_clave": "atencion por, segundo nivel, ii dr, dr jose, seguridad vigilancia"
+    },
+    {
+     "nombre": "INGENIERIA DE DIAGNOSTICO CLINICO SOCIEDAD ANONIMA CERRADA",
+     "score": 0.328,
+     "palabras_clave": "arteriales, electrolitos metabolitos, metabolitos, gases arteriales, arteriales electrolitos"
+    },
+    {
+     "nombre": "PRODUCTOS ROCHE Q F S A",
+     "score": 0.317,
+     "palabras_clave": "de reactivos, reactivos, en cesion, cesion, cesion de"
+    },
+    {
+     "nombre": "SIMED PERU S.A.C.",
+     "score": 0.314,
+     "palabras_clave": "con equipo, cesion de, cesion, microbiologia, en cesion"
+    },
+    {
+     "nombre": "W.P. BIOMED SOCIEDAD ANONIMA",
+     "score": 0.298,
+     "palabras_clave": "estirpes, reactivos, hemograma, de patologia, patologia clinica"
+    },
+    {
+     "nombre": "FUNDO LA MARIA EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "score": 0.294,
+     "palabras_clave": "nutricion para, 90 dias, alimentacion nutricion, de alimentacion, nutricion"
+    },
+    {
+     "nombre": "ASCENSORES DEL CENTRO SOCIEDAD ANONIMA CERRADA",
+     "score": 0.289,
+     "palabras_clave": "ascensores, ascensor de, ascensor, ascensores de, de ascensores"
+    },
+    {
+     "nombre": "FRESENIUS MEDICAL CARE DEL PERU S.A.",
+     "score": 0.287,
+     "palabras_clave": "dialisis peritoneal, continuadores, peritoneal, dialisis, pacientes continuadores"
+    }
+   ]
+  },
+  {
+   "entidad": "MUNICIPALIDAD PROVINCIAL DE HUANCANE",
+   "tipo": "municipalidad",
+   "departamento": "PUNO",
+   "proveedores_actuales": [
+    {
+     "nombre": "GRUPO SANTA FE SOCIEDAD ANONIMA CERRADA - GRUPO SANTA FE S.A.C.",
+     "n_adjudicaciones": 6,
+     "palabras_clave": "tipo ip, ip, ip 42, portland, cemento portland"
+    },
+    {
+     "nombre": "COSAPP CONTRATISTAS S.R.L.",
+     "n_adjudicaciones": 4,
+     "palabras_clave": "huancane huancane, huancane, huancane puno, av ejercito, av catastro"
+    },
+    {
+     "nombre": "LOGISTIC CORAZON DE LEON E.I.R.L.",
+     "n_adjudicaciones": 4,
+     "palabras_clave": "peso neto, neto, de peso, grated de, en envase"
+    },
+    {
+     "nombre": "COMERCIAL DISTRIBUIDORA CORAZON VALIENTE EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "brindar asistencia, asistencia alimentaria, para brindar, huancane adquisicion, alimentos diversos"
+    },
+    {
+     "nombre": "IMPORTACIONES CHAPI E.I.R.L.",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "tipo ip, ip segun, ip, ip 42, bienes cemento"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "Persona natural (RUC 10024****17)",
+     "score": 0.438,
+     "palabras_clave": "50 segun, jayu, diesel, b5 50, de diesel"
+    },
+    {
+     "nombre": "GRIFO AJP JULIACA S.A.C",
+     "score": 0.418,
+     "palabras_clave": "50 segun, moho, regular segun, pe 341, 341"
+    },
+    {
+     "nombre": "Persona natural (RUC 10024****78)",
+     "score": 0.396,
+     "palabras_clave": "grado 60, construccion grado, chilla, barra de, grado"
+    },
+    {
+     "nombre": "GRIFOS SELVASUR HAL S.A.C.",
+     "score": 0.394,
+     "palabras_clave": "50 segun, de diesel, diesel b5, b5, diesel"
+    },
+    {
+     "nombre": "INGENIERIA DE DESARROLLO J & C SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA",
+     "score": 0.392,
+     "palabras_clave": "concreto premezclado, premezclado, 210, 210 kg, kg cm2"
+    },
+    {
+     "nombre": "CORPORACION GRUPO ACEROS DEL SUR S.A.C.",
+     "score": 0.39,
+     "palabras_clave": "9m, 4200 kg, fy 4200, 4200, fy"
+    },
+    {
+     "nombre": "GRUPO PERU GRASS SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA - GRUPO PERU GRASS S.R.L.",
+     "score": 0.384,
+     "palabras_clave": "sintetico, cesped, de saman, cesped sintetico, de cesped"
+    },
+    {
+     "nombre": "EXTRALUM E.I.R.L.",
+     "score": 0.381,
+     "palabras_clave": "de vidrios, vidrios, instalacion segun, sistema moduglass, moduglass"
+    },
+    {
+     "nombre": "GRUPO POWERCON SOCIEDAD ANONIMA CERRADA",
+     "score": 0.375,
+     "palabras_clave": "cm2, de ichuna, kg cm2, de concreto, ip agregado"
+    },
+    {
+     "nombre": "EPP INDUSTRIAL E.I.R.L.",
+     "score": 0.374,
+     "palabras_clave": "de ladrillo, ladrillo, ladrillo kk, kk, kk tipo"
+    }
+   ]
+  },
+  {
+   "entidad": "MUNICIPALIDAD PROVINCIAL DE LA MAR - SAN MIGUEL",
+   "tipo": "municipalidad",
+   "departamento": "AYACUCHO",
+   "proveedores_actuales": [
+    {
+     "nombre": "\"MULTISERVICIOS Y AGROINDUSTRIAS INTI S.A.C.\"",
+     "n_adjudicaciones": 6,
+     "palabras_clave": "complementacion alimentaria, de vilcas, complementacion, pelado entero, de complementacion"
+    },
+    {
+     "nombre": "AGROINDUSTRIAS SANTA ROSA DE LIMA S.R.L.",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "vaso de, vaso, minerales de, leche, de leche"
+    },
+    {
+     "nombre": "FOX PETRO S.A.C.",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "oronccoy, la mar, mar ayacucho, mar, de combustible"
+    },
+    {
+     "nombre": "HNOS.PALOMINOS S.A.C.",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "emergencia segun, nino ubicado, anco provincia, la mar, patibamba"
+    },
+    {
+     "nombre": "INVERSIONES FAMEVA S.A.C.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "ap, ruta ap, viracochapata, chullcuisa santa, chullcuisa"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "AGRO QUINACHO E.I.R.L.",
+     "score": 0.399,
+     "palabras_clave": "vaso de, vaso, de leche, leche, de bellido"
+    },
+    {
+     "nombre": "MULTISERVIS S & R SHIMIZU SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA",
+     "score": 0.399,
+     "palabras_clave": "de punos, punos, vaso de, vaso, programa vaso"
+    },
+    {
+     "nombre": "WARI CONSULTORES E.I.R.L.",
+     "score": 0.396,
+     "palabras_clave": "chichucancha, ay, consultoria, de consultoria, vecinal ay"
+    },
+    {
+     "nombre": "CASEDA INVERSIONES S.A.C.",
+     "score": 0.394,
+     "palabras_clave": "leche para, vaso de, vaso, de leche, leche"
+    },
+    {
+     "nombre": "AGROINDUSTRIAS DE ALIMENTOS J.D. E.I.R.L.",
+     "score": 0.393,
+     "palabras_clave": "del productos, vaso de, vaso, leche, de leche"
+    },
+    {
+     "nombre": "AGROINDUSTRIAS VITAGEN EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "score": 0.39,
+     "palabras_clave": "vaso, vaso de, leche, de leche, leche de"
+    },
+    {
+     "nombre": "HP EMPRESARIOS EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA-HP EMPRESARIOS E.I.R.L.",
+     "score": 0.389,
+     "palabras_clave": "deshidratada, vaso de, vaso, de morococha, morococha"
+    },
+    {
+     "nombre": "INVERSIONES AGROINDUSTRIALES FORTIMIX EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "score": 0.388,
+     "palabras_clave": "vaso de, vaso, de leche, ripan, de ripan"
+    },
+    {
+     "nombre": "ALIMENTOS AYNI PERU S.A.C.",
+     "score": 0.388,
+     "palabras_clave": "vaso, vaso de, de leche, leche, extruidas"
+    },
+    {
+     "nombre": "AGROINDUSTRIAL EL ANDINO E.I.R.L. AGRIAN E.I.R.L.",
+     "score": 0.388,
+     "palabras_clave": "harinas precocidas, de harinas, fortificada con, vaso de, vaso"
+    }
+   ]
+  }
+ ]
+}
