@@ -1,0 +1,118 @@
+{
+ "criterio": "Arista entre dos proveedores que ofertaron en el mismo proceso; peso = procesos en común.",
+ "parametros": {
+  "min_participaciones": 5,
+  "tope_postores": 30,
+  "peso_minimo": 2
+ },
+ "tabla_tope": [
+  {
+   "tope": 10,
+   "procesos": 97402,
+   "pares_posibles": 1265750,
+   "pct_procesos": 56.4
+  },
+  {
+   "tope": 15,
+   "procesos": 123859,
+   "pares_posibles": 3298718,
+   "pct_procesos": 71.7
+  },
+  {
+   "tope": 20,
+   "procesos": 140370,
+   "pares_posibles": 5787652,
+   "pct_procesos": 81.3
+  },
+  {
+   "tope": 30,
+   "procesos": 156783,
+   "pares_posibles": 10691800,
+   "pct_procesos": 90.8
+  },
+  {
+   "tope": 50,
+   "procesos": 167958,
+   "pares_posibles": 18835325,
+   "pct_procesos": 97.3
+  },
+  {
+   "tope": "sin tope",
+   "procesos": 172705,
+   "pares_posibles": 31422554,
+   "pct_procesos": 100.0
+  }
+ ],
+ "grafo_final": {
+  "nodos": 40106,
+  "aristas": 1482754,
+  "componentes": 100,
+  "mayor_componente": 39798,
+  "pct_mayor_componente": 99.2,
+  "grado_medio": 73.9,
+  "grado_mediano": 29.0,
+  "grado_max": 10705
+ },
+ "top_conectados": [
+  {
+   "nombre": "TVT QONTRATISTAS E.I.R.L.",
+   "ruc": "20611499591",
+   "grado": 10705,
+   "peso_total": 96119
+  },
+  {
+   "nombre": "INVERSIONES GENERALES LAURA ROCA S.A.C.",
+   "ruc": "20605753907",
+   "grado": 10083,
+   "peso_total": 91215
+  },
+  {
+   "nombre": "OCAMPER S.A.C.",
+   "ruc": "20613035398",
+   "grado": 8114,
+   "peso_total": 70111
+  },
+  {
+   "nombre": "CONSTRUCAPRIGLE E.I.R.L.",
+   "ruc": "20612573621",
+   "grado": 7868,
+   "peso_total": 65254
+  },
+  {
+   "nombre": "C.L.D. CONTRATISTAS GENERALES S.A.C.",
+   "ruc": "20613921002",
+   "grado": 6819,
+   "peso_total": 55108
+  },
+  {
+   "nombre": "TECNICAS DE INGENIERIA Y CONTRATOS S.A.C. - TEINGECON S.A.C.",
+   "ruc": "20603425104",
+   "grado": 6359,
+   "peso_total": 65083
+  },
+  {
+   "nombre": "CRISAMYR SOCIEDAD ANONIMA CERRADA",
+   "ruc": "20542513439",
+   "grado": 5986,
+   "peso_total": 51502
+  },
+  {
+   "nombre": "J.C.A. CONTRATISTAS GENERALES S.R.LTDA.",
+   "ruc": "20274419637",
+   "grado": 5617,
+   "peso_total": 56555
+  },
+  {
+   "nombre": "COMERCIO E INVERSIONES ANCCAS S.A.C.",
+   "ruc": "20607396516",
+   "grado": 5256,
+   "peso_total": 43624
+  },
+  {
+   "nombre": "INVERSIONES Y EDIFICACIONES JYR S.A.C.",
+   "ruc": "20609931311",
+   "grado": 4956,
+   "peso_total": 44582
+  }
+ ]
+}
