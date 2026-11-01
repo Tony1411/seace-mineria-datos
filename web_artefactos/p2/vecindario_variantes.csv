@@ -1,0 +1,7 @@
+forma,similitud,vecinos,recall@10
+item–item,coseno,800,0.0732
+item–item,Jaccard,800,0.0729
+item–item,Pearson,800,0.0686
+user–user,coseno,50,0.1246
+user–user,Jaccard,50,0.124
+user–user,Pearson,50,0.1237
