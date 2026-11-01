@@ -11,3 +11,7 @@ streamlit==1.65.0
 # Solo el notebook B_01.2 (ANN); en Colab ya viene o se instala con pip
 # faiss-cpu
 # scikit-learn
+# Proyecto 2 (notebooks P2_*): clustering, recomendadores y evaluación
+scikit-learn==1.9.1
+scipy==1.18.1
+faiss-cpu==1.15.1
