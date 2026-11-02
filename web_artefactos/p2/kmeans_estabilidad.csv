@@ -1,0 +1,15 @@
+sujeto,k,ari_medio,ari_peor,pares_bajo_0_9,pares
+proveedor,2,1.0,1.0,0,20
+proveedor,3,0.99,0.976,0,20
+proveedor,4,0.931,0.634,3,20
+proveedor,5,0.984,0.958,0,20
+proveedor,6,0.968,0.924,0,20
+proveedor,7,0.634,0.541,16,20
+proveedor,8,0.935,0.765,2,20
+entidad,2,0.927,0.809,3,20
+entidad,3,0.777,0.441,12,20
+entidad,4,0.491,0.333,19,20
+entidad,5,0.815,0.533,17,20
+entidad,6,0.799,0.413,16,20
+entidad,7,0.718,0.566,20,20
+entidad,8,0.594,0.459,20,20
