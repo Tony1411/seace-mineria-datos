@@ -1,0 +1,1042 @@
+{
+ "meta": {
+  "alfa": 0.1,
+  "k": 10,
+  "entidades_con_acierto": 236,
+  "entidades_evaluables": 976
+ },
+ "ejemplos": [
+  {
+   "entidad": "MUNICIPALIDAD PROVINCIAL DE UTCUBAMBA - BAGUA GRANDE",
+   "tipo": "municipalidad",
+   "departamento": "AMAZONAS",
+   "proveedores_en_train": 6,
+   "contrataciones_nuevas_en_test": 1,
+   "proveedores_actuales": [
+    {
+     "nombre": "ESTACION DE SERVICIOS PICORITO EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "utcubamba, de utcubamba, diesel b5, b5, diesel"
+    },
+    {
+     "nombre": "ESTACION DE SERVICIOS SAN LUIS EIRL.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "de chachapoyas, chachapoyas, de cajaruro, cajaruro, de utcubamba"
+    },
+    {
+     "nombre": "MULTISERVICIOS BUSINESS C & R SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "de imaza, de leche, imaza, leche, vaso de"
+    },
+    {
+     "nombre": "Persona natural (RUC 10466****07)",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "buena vista, buena, de amazonas, epm, pato"
+    },
+    {
+     "nombre": "TRUNX S.A.C.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "sist, moyobamba, de tocache, de moyobamba, jr"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "FACOIMPEC E.I.R.L.",
+     "palabras_clave": "harina, para atender, atender, kiwicha, hojuelas",
+     "acierto": false
+    },
+    {
+     "nombre": "PROCESADORA Y AGROINDUSTRIA ESPERANZA E.I.R.L.",
+     "palabras_clave": "soya, con vitaminas, minerales, vitaminas minerales, vitaminas",
+     "acierto": true
+    },
+    {
+     "nombre": "CORPORACIÓN DUPINIS EMPRESA INDIVIDUAL DE RESPOSABILIDAD LIMITADA",
+     "palabras_clave": "tostada, integral tostada, platano soya, tostada chufla, tostada platano",
+     "acierto": false
+    },
+    {
+     "nombre": "GRUPO ALIMENTARIO AMAZONICO EIRL",
+     "palabras_clave": "tostada, vaso de, vaso, leche, de leche",
+     "acierto": false
+    },
+    {
+     "nombre": "AGRONEGOCIOS & CIA S.A.C.",
+     "palabras_clave": "vaso de, vaso, leche, programa vaso, de leche",
+     "acierto": false
+    },
+    {
+     "nombre": "ALIMENTOS UTCUBAMBA E.I.R.L",
+     "palabras_clave": "enero diciembre, vaso de, vaso, leche, producto alimentario",
+     "acierto": false
+    },
+    {
+     "nombre": "JAEN DISTRIBUCIONES S.A.C.",
+     "palabras_clave": "vaso de, vaso, cutervo cajamarca, leche, programa vaso",
+     "acierto": false
+    },
+    {
+     "nombre": "PROLAC AMAZONAS E.I.R.L",
+     "palabras_clave": "de leche, leche, programa vaso, vaso de, vaso",
+     "acierto": false
+    },
+    {
+     "nombre": "Persona natural (RUC 10405****90)",
+     "palabras_clave": "luya, pisuquia, de pisuquia, cinco mil, luya region",
+     "acierto": false
+    },
+    {
+     "nombre": "JUAN GUERRERO DISTRIBUCIONES EIRL",
+     "palabras_clave": "leche, de leche, vaso de, vaso, de 170",
+     "acierto": false
+    }
+   ]
+  },
+  {
+   "entidad": "MUNICIPALIDAD DISTRITAL DE MACATE",
+   "tipo": "municipalidad",
+   "departamento": "ANCASH",
+   "proveedores_en_train": 11,
+   "contrataciones_nuevas_en_test": 2,
+   "proveedores_actuales": [
+    {
+     "nombre": "INVERSIONES CARLOS AQUINO. P E.I.R.L.",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "macate provincia, macate, de macate, santa departamento, vehiculos maquinarias"
+    },
+    {
+     "nombre": "CONSTRUCTORA Y CONSULTORIA DEROZE E.I.R.L.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "santa departamento, con sinpad, distrito chimbote, sinpad, chimbote provincia"
+    },
+    {
+     "nombre": "AGRONEGOCIOS  VIRGEN DE YAUCA S.A.C.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "de fertilizante, fertilizante, fosfato diamonico, diamonico, sulfato de"
+    },
+    {
+     "nombre": "UNIMAQ S.A.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "de retroexcavadora, retroexcavadora, sobre ruedas, misionales institucionales, operativos misionales"
+    },
+    {
+     "nombre": "TRANSPORTES Y SERVICIOS OBEMAN S.A.C",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "pacifico norte, norte adquisicion, pacifico, provincia del, del santa"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "Persona natural (RUC 10270****62)",
+     "palabras_clave": "de celendin, celendin, cortegana, celendin del, celendin departamento",
+     "acierto": false
+    },
+    {
+     "nombre": "SERVICIOS MULTIPLES OLD NAVY S.R.L.",
+     "palabras_clave": "de chimbote, chimbote, chimbote provincia, santa departamento, con sinpad",
+     "acierto": false
+    },
+    {
+     "nombre": "GAS DAYTONA S.R.L.",
+     "palabras_clave": "nuevo chimbote, de nuevo, chimbote distrito, santa departamento, chimbote",
+     "acierto": false
+    },
+    {
+     "nombre": "CONSAGA INGENIEROS CONTRATISTAS GENERALES S.R.L.",
+     "palabras_clave": "yautan, de yautan, casma departamento, cueva, de ancash",
+     "acierto": false
+    },
+    {
+     "nombre": "SANCHEZ RICO INGENIERIA Y CONSTRUCCION S.A.C.",
+     "palabras_clave": "obra 01, degradadas por, areas degradadas, degradadas, por residuos",
+     "acierto": false
+    },
+    {
+     "nombre": "CORPORACION DE LOS ANDES E.I.R.L.",
+     "palabras_clave": "bienes alimenticios, los bienes, para atender, atender, atender los",
+     "acierto": true
+    },
+    {
+     "nombre": "IPESA S.A.C.",
+     "palabras_clave": "tractor agricola, tractor, de tractor, rastra, arado",
+     "acierto": false
+    },
+    {
+     "nombre": "Persona natural (RUC 10311****23)",
+     "palabras_clave": "de inkawasi, inkawasi, inkawasi provincia, apurimac suministro, de diesel",
+     "acierto": false
+    },
+    {
+     "nombre": "VOLVO PERU S A",
+     "palabras_clave": "cisterna, camion cisterna, camion, de cutervo, equipo mecanico",
+     "acierto": false
+    },
+    {
+     "nombre": "AUTONORT CAJAMARCA S.A.C.",
+     "palabras_clave": "4x4, camioneta, pick up, pick, up",
+     "acierto": false
+    }
+   ]
+  },
+  {
+   "entidad": "MUNICIPALIDAD DISTRITAL DE CASCA",
+   "tipo": "municipalidad",
+   "departamento": "ANCASH",
+   "proveedores_en_train": 6,
+   "contrataciones_nuevas_en_test": 2,
+   "proveedores_actuales": [
+    {
+     "nombre": "ALLIN FOOD S.R.L.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "ancash periodo, luzuriaga departamento, mariscal luzuriaga, luzuriaga, aco provincia"
+    },
+    {
+     "nombre": "GRAFICA GARATE S.A.C.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "empastado, de impresion, impresion de, impresion, de merchandising"
+    },
+    {
+     "nombre": "DMS INGENIERIA ASOCIADA S.R.L.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "del estudio, el acuifero, suelos con, alcantarillado distrito, estudio de"
+    },
+    {
+     "nombre": "EMCONT PROYECTOS E INVERSIONES S.A.C - EMCONT S.A.C.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "provincia sihuas, pomabamba del, sihuas departamento, pomabamba, de pomabamba"
+    },
+    {
+     "nombre": "YAEV E.I.R.L.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "de alcantarillado, huari, de huaraz, ampas, tomaykichwa provincia"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "CONSTRUCTORA Y MULTISERVICIOS ROMANDAYU E.I.R.L.",
+     "palabras_clave": "luzuriaga, mariscal luzuriaga, de ancash, inicial en, de fidel",
+     "acierto": false
+    },
+    {
+     "nombre": "HCV EDIFICACIONES PROYECTOS E INVERSIONES E.I.R.L.",
+     "palabras_clave": "de sihuas, sihuas, sihuas del, ancash cui, mariscal luzuriaga",
+     "acierto": true
+    },
+    {
+     "nombre": "CONSTRUCTORA E INVERSIONES TAYTA PANCHO E.I.R.L.",
+     "palabras_clave": "parobamba de, pomabamba del, de parobamba, parobamba, de pomabamba",
+     "acierto": false
+    },
+    {
+     "nombre": "AGROINDUSTRIA LA PERLA DEL HUASCARAN S.R.L.",
+     "palabras_clave": "vaso de, vaso, de leche, leche, fiscal 2026",
+     "acierto": true
+    },
+    {
+     "nombre": "AGRO SERVICIOS Y PRODUCCION DE ALIMENTOS SAN JUAN DE PISCO S.R.L.",
+     "palabras_clave": "vaso de, vaso, de leche, leche, leche de",
+     "acierto": false
+    },
+    {
+     "nombre": "VCR GROUP S.A.C.",
+     "palabras_clave": "pomabamba del, de pomabamba, pomabamba, quinuabamba, ancash con",
+     "acierto": false
+    },
+    {
+     "nombre": "Persona natural (RUC 10435****93)",
+     "palabras_clave": "huari del, de huari, huari, marcos de, pichiu",
+     "acierto": false
+    },
+    {
+     "nombre": "SOSAGER S.R.L.",
+     "palabras_clave": "ancash con, huaraz, huaraz provincia, complementaria, de huaylas",
+     "acierto": false
+    },
+    {
+     "nombre": "INVERSIONES MARYSA S.A.C.",
+     "palabras_clave": "alimentos insumos, perido, lucuma, vaso de, vaso",
+     "acierto": false
+    },
+    {
+     "nombre": "EMPRESA CONSTRUCTORA NUEVA VICTORIA S.R.L.",
+     "palabras_clave": "huacchis provincia, de huacchis, huacchis, ancash con, bolognesi departamento",
+     "acierto": false
+    }
+   ]
+  },
+  {
+   "entidad": "HOSPITAL NACIONAL VICTOR LARCO HERRERA",
+   "tipo": "salud",
+   "departamento": "LIMA",
+   "proveedores_en_train": 28,
+   "contrataciones_nuevas_en_test": 9,
+   "proveedores_actuales": [
+    {
+     "nombre": "COMERCIAL TRES ESTRELLAS S.A.",
+     "n_adjudicaciones": 4,
+     "palabras_clave": "personal fap, perecibles, alimentos viveres, fap af, viveres frescos"
+    },
+    {
+     "nombre": "COMERCIAL JHV DEL CENTRO EIRL",
+     "n_adjudicaciones": 4,
+     "palabras_clave": "personas por, por subasta, racionamiento, verduras, viveres abarrotes"
+    },
+    {
+     "nombre": "MELCORPACHECO S.R.L.",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "comedores de, la unmsm, unmsm adquisicion, unmsm, los comedores"
+    },
+    {
+     "nombre": "DIMEXA S.A.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "mg, farmaceuticos, productos farmaceuticos, inyectable, sulpirida 200"
+    },
+    {
+     "nombre": "CIRPRO PERU S.A.C.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "de frutas, frutas, de nutricion, conserva de, conserva"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "SEVEN PHARMA SAC",
+     "palabras_clave": "mg, productos farmaceuticos, farmaceuticos, corporativa para, mg tableta",
+     "acierto": false
+    },
+    {
+     "nombre": "CORPORACION ALIMENTARIA ALEXCAR S.A.C.",
+     "palabras_clave": "de aves, aves, viveres carnicos, nutricion del, de nutricion",
+     "acierto": false
+    },
+    {
+     "nombre": "AXIERTA S.A.C.",
+     "palabras_clave": "farmaceuticos compra, farmaceuticos, productos farmaceuticos, abastecimiento por, meses tabletas",
+     "acierto": false
+    },
+    {
+     "nombre": "ARGON PHARMA S.A.C.",
+     "palabras_clave": "productos farmaceuticos, farmaceuticos, farmaceuticos compra, items adquisicion, items",
+     "acierto": false
+    },
+    {
+     "nombre": "FARMACHIF S.R.L.",
+     "palabras_clave": "farmaceuticos compra, meses treinta, farmaceuticos, productos farmaceuticos, sectorial para",
+     "acierto": false
+    },
+    {
+     "nombre": "DISTRIBUIDORA DROGUERIA SAGITARIO S.R.L.",
+     "palabras_clave": "iopamidol, farmaceuticos, productos farmaceuticos, farmaceuticos compra, items adquisicion",
+     "acierto": false
+    },
+    {
+     "nombre": "SUN PHARMACEUTICAL INDUSTRIES S.A.C.",
+     "palabras_clave": "productos farmaceuticos, farmaceuticos, hospital hermilio, esenciales, farmaceuticos esenciales",
+     "acierto": true
+    },
+    {
+     "nombre": "CORPRODI S.A.C.",
+     "palabras_clave": "hospitalizados personal, de guardia, pacientes hospitalizados, hospitalizados, pnp agusto",
+     "acierto": false
+    },
+    {
+     "nombre": "FARMA MIAVIDA SOCIEDAD ANONIMA CERRADA",
+     "palabras_clave": "heparina, heparina sodica, productos farmaceuticos, farmaceuticos, haloperidol",
+     "acierto": false
+    },
+    {
+     "nombre": "GLOBAL MIX FARMA SOCIEDAD ANONIMA CERRADA",
+     "palabras_clave": "productos farmaceuticos, farmaceuticos, oncologicos 16, farmaceuticos compra, oncologicos",
+     "acierto": false
+    }
+   ]
+  },
+  {
+   "entidad": "INSTITUTO DE VIALIDAD MUNICIPAL DE HUANCAYO",
+   "tipo": "otro",
+   "departamento": "JUNIN",
+   "proveedores_en_train": 6,
+   "contrataciones_nuevas_en_test": 1,
+   "proveedores_actuales": [
+    {
+     "nombre": "CORPORACION DE INGENIEROS EXPERTOS EN TECNOLOGIA E.I.R.L.",
+     "n_adjudicaciones": 5,
+     "palabras_clave": "emp ju, ju, nueva florida, dv, florida"
+    },
+    {
+     "nombre": "GRUAND S.A.C.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "emp pe3s, pe3s, cruce, de pomacocha, ju"
+    },
+    {
+     "nombre": "EMPRESA LAURA CONSTRUCTORA E.I.R.L.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "emp ju, monobamba, ju, tramo pta, jauja junin"
+    },
+    {
+     "nombre": "EMPRESA CONSTRUCTORA & PROVEEDORES REYGI SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "pe3s, emp pe3s, playa, vial no, alto gran"
+    },
+    {
+     "nombre": "ASOCIACION CIVIL GRAN CATALINA HUANCA",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "emp ju, ju, ju 690, 676, palcamayo"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "LA PERLA DORADA CONSTRUCTORES SOCIEDAD ANÓNIMA CERRADA",
+     "palabras_clave": "ju, emp ju, concepcion region, ruta ju, vial provincial",
+     "acierto": false
+    },
+    {
+     "nombre": "MARGARITA'S INGENIEROS & CONSTRUCTORES S.A.C.",
+     "palabras_clave": "emp ju, ju, km emp, 816, 801",
+     "acierto": true
+    },
+    {
+     "nombre": "INVERSIONES FUERZA AMAZONICA M&R EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "palabras_clave": "emp ju, ju, pe 5s, 5s, llaylla",
+     "acierto": false
+    },
+    {
+     "nombre": "INVERSIONES SAN PEDRO HG SOCIEDAD ANONIMA CERRADA - INVERSIONES SAN PEDRO HG S.A.C.",
+     "palabras_clave": "palcamayo, emp ju, ju, tarma junin, 634",
+     "acierto": false
+    },
+    {
+     "nombre": "GRUPO BB MAQ SOCIEDAD ANONIMA CERRADA - GRUPO BB MAQ S.A.C.",
+     "palabras_clave": "emp ju, ju, 5s bajo, limena, pena blanca",
+     "acierto": false
+    },
+    {
+     "nombre": "GROUP HUILLCAS SOCIEDAD ANONIMA CERRADA",
+     "palabras_clave": "emp ju, ju, km emp, 851, hv",
+     "acierto": false
+    },
+    {
+     "nombre": "CONSTRUCTORA Y CONSULTORA WEC S.A.C.",
+     "palabras_clave": "ju, emp ju, ondores, 118, departamental ju",
+     "acierto": false
+    },
+    {
+     "nombre": "SUMAQ PERU CONTRATISTAS GENERALES E.I.R.L.",
+     "palabras_clave": "ju, miricharo, vial no, pichanaqui provincia, de pichanaqui",
+     "acierto": false
+    },
+    {
+     "nombre": "D'JALK TOPOGRAFIA & CONSTRUCCION E.I.R.L.",
+     "palabras_clave": "emp am, limabamba, am, pavimentado tramo, rutinario del",
+     "acierto": false
+    },
+    {
+     "nombre": "Persona natural (RUC 10424****89)",
+     "palabras_clave": "piedras tambopata, 070, pavimentado emp, md, pe 30",
+     "acierto": false
+    }
+   ]
+  },
+  {
+   "entidad": "INSTITUTO DE INVESTIGACIONES DE LA AMAZONIA PERUANA - I.I.A.P.",
+   "tipo": "otro",
+   "departamento": "LORETO",
+   "proveedores_en_train": 30,
+   "contrataciones_nuevas_en_test": 5,
+   "proveedores_actuales": [
+    {
+     "nombre": "BAIRES S.A.C.",
+     "n_adjudicaciones": 6,
+     "palabras_clave": "de rotacion, microtomo de, de anatomia, microtomo, rotacion"
+    },
+    {
+     "nombre": "MERCK PERUANA S A",
+     "n_adjudicaciones": 6,
+     "palabras_clave": "somatropina, iny, beta, ml, ml iny"
+    },
+    {
+     "nombre": "SERVICIOS AMERICAN HAWK S.A.C.",
+     "n_adjudicaciones": 5,
+     "palabras_clave": "purus, de investigaciones, investigaciones, purus del, privada con"
+    },
+    {
+     "nombre": "PREVENCION VIGILANCIA Y SEGURIDAD DEL ORIENTE SOCIEDAD ANONIMA CERRADA - PREVISEG S.A.C.",
+     "n_adjudicaciones": 4,
+     "palabras_clave": "privada con, de investigaciones, investigaciones, con arma, arma para"
+    },
+    {
+     "nombre": "CIENTIFICA ANDINA S.A.C.",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "espectrofotometro, infrarrojo, tamizaje neonatal, rupa, tamizaje"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "REACTIVOS PARA ANALISIS S.A.C.",
+     "palabras_clave": "de masas, masas, cuadrupolo, espectrofotometro, cromatografo",
+     "acierto": false
+    },
+    {
+     "nombre": "VICAT SECURITY S.A.C.",
+     "palabras_clave": "arma para, arma, seguridad vigilancia, vigilancia, vigilancia privada",
+     "acierto": false
+    },
+    {
+     "nombre": "H.W.KESSEL S.A.C.",
+     "palabras_clave": "microscopio, centrifuga refrigerada, invertido, de microscopio, trinocular",
+     "acierto": true
+    },
+    {
+     "nombre": "UNIVERSO CIENTIFICO S.A.C.",
+     "palabras_clave": "microscopio, binocular, microscopio compuesto, de fases, trinocular",
+     "acierto": false
+    },
+    {
+     "nombre": "CIMATEC SAC",
+     "palabras_clave": "2480490 proagrobio, proagrobio adquisicion, proagrobio, liofilizador, cui 2480490",
+     "acierto": true
+    },
+    {
+     "nombre": "INNOVACIONES TECNOLOGICAS HASSO GROUP S.A.C. - HASSO GROUP S.A.C.",
+     "palabras_clave": "de filtracion, filtracion, purificador, purificador de, la molina",
+     "acierto": false
+    },
+    {
+     "nombre": "IMPERIA SOLUCIONES TECNOLOGICAS S.A.C.",
+     "palabras_clave": "aplicaciones web, seguridad digital, solucion integral, solucion, la molina",
+     "acierto": false
+    },
+    {
+     "nombre": "TECNOLOGIA Y EQUIPAMIENTO KANG S.A.C.",
+     "palabras_clave": "diaz distrito, superior publico, publico pedro, ingenieria, laboratorio de",
+     "acierto": false
+    },
+    {
+     "nombre": "NEXUSPLUS S.A.C.",
+     "palabras_clave": "microscopio, con camara, criminalistica pnp, de microscopio, camara",
+     "acierto": false
+    },
+    {
+     "nombre": "EMPRESA SECURITY AQUIANE SOCIEDAD ANONIMA CERRADA",
+     "palabras_clave": "seguridad vigilancia, vigilancia para, udr, vigilancia, de seguridad",
+     "acierto": false
+    }
+   ]
+  },
+  {
+   "entidad": "MUNICIPALIDAD DISTRITAL DE OROPESA - QUISPICANCHIS",
+   "tipo": "municipalidad",
+   "departamento": "CUSCO",
+   "proveedores_en_train": 13,
+   "contrataciones_nuevas_en_test": 3,
+   "proveedores_actuales": [
+    {
+     "nombre": "GRUPO SHARMELY EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA - GRUPO SHARMELY E.I.R.L.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "concreto pre, pre mezclado, mezclado, yanamanchi, cm2 para"
+    },
+    {
+     "nombre": "COMERCIALES Y DISTRIBUCIONES QORI D´LUCE EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "programa social, vaso de, vaso, de leche, leche"
+    },
+    {
+     "nombre": "A&J SERVICIOS GENERALES E.I.R.L",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "concreto premezclado, premezclado, de concreto, cusco suministro, concreto"
+    },
+    {
+     "nombre": "Persona natural (RUC 10251****84)",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "concreto premezclado, premezclado, 210 kg, ip agregado, 210"
+    },
+    {
+     "nombre": "INVERSIONES CECO. S.A.C",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "tipo ip, ip, cemento, de cemento, ip 42"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "CORPORACION RIMAK E.I.R.L.",
+     "palabras_clave": "ip agregado, ccorca, concreto premezclado, premezclado, 210",
+     "acierto": false
+    },
+    {
+     "nombre": "CONCRETOS PREMEZCLADOS Y MAQUINARIAS SAN RAPHAEL SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA",
+     "palabras_clave": "concreto premezclado, premezclado, premezclado fc, cm2 para, fc",
+     "acierto": false
+    },
+    {
+     "nombre": "MAIKA INVERSIONES Y CONTRATISTAS GENERALES SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA - MAIKA",
+     "palabras_clave": "fc, fc 245, 245 kg, kg cm2, 245",
+     "acierto": false
+    },
+    {
+     "nombre": "CONCRETOS E INGENIERIA KALLPA MIX SOCIEDAD ANONIMA CERRADA-KALLPA MIX S.A.C.",
+     "palabras_clave": "concreto premezclado, premezclado, cm2, calle bolognesi, sallac distrito",
+     "acierto": false
+    },
+    {
+     "nombre": "J. S. SANTE INVERSIONES E.I.R.L.",
+     "palabras_clave": "la apv, concreto premezclado, premezclado, apv, kg cm2",
+     "acierto": false
+    },
+    {
+     "nombre": "CONCRETO SUR MIX E.I.R.L.",
+     "palabras_clave": "concreto premezclado, premezclado, cm2, cm2 para, kg cm2",
+     "acierto": false
+    },
+    {
+     "nombre": "GRUPO MURILLO E.I.R.LTDA.",
+     "palabras_clave": "de abancay, abancay, abancay departamento, portland tipo, cemento portland",
+     "acierto": false
+    },
+    {
+     "nombre": "CORPORACION CLABE S.R.L.",
+     "palabras_clave": "ip 42, tipo ip, ip, cemento portland, portland",
+     "acierto": true
+    },
+    {
+     "nombre": "MAFETSUR INVERSIONES GENERALES SOCIEDAD ANONIMA CERRADA",
+     "palabras_clave": "tipo ip, ip, portland, cemento portland, ip 42",
+     "acierto": false
+    },
+    {
+     "nombre": "SOLUTION AND INNOVATION S.A.C",
+     "palabras_clave": "aguano de, aguano, de x4, madera aguano, x3m",
+     "acierto": false
+    }
+   ]
+  },
+  {
+   "entidad": "MUNICIPALIDAD PROVINCIAL DE ANTONIO RAYMONDI - LLAMELLIN",
+   "tipo": "municipalidad",
+   "departamento": "ANCASH",
+   "proveedores_en_train": 5,
+   "contrataciones_nuevas_en_test": 2,
+   "proveedores_actuales": [
+    {
+     "nombre": "AGROINDUSTRIA LA PERLA DEL HUASCARAN S.R.L.",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "vaso de, vaso, de leche, leche, fiscal 2026"
+    },
+    {
+     "nombre": "INVERSIONES OHDELIS E.I.R.L.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "llamellin, antonio raimondi, de antonio, alimentaria pca, pca"
+    },
+    {
+     "nombre": "SERVICIOS GENERALES MI FLOR LINDA Z&A S.A.C.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "santa adquisicion, provincial del, modalidad pantbc, de pallasca, de conchucos"
+    },
+    {
+     "nombre": "MULTISERVICIOS EGUIZABAL GUARDIA E.I.R.L.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "collota, de viscas, huacchis provincia, de huacchis, huacchis"
+    },
+    {
+     "nombre": "GRUPO EGUIZABAL S.A.C.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "chingas, charan, de chacas, chacas, raymondi"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "AGRO SERVICIOS Y PRODUCCION DE ALIMENTOS SAN JUAN DE PISCO S.R.L.",
+     "palabras_clave": "vaso de, vaso, de leche, leche, leche de",
+     "acierto": false
+    },
+    {
+     "nombre": "INVERSIONES MARYSA S.A.C.",
+     "palabras_clave": "alimentos insumos, perido, lucuma, vaso de, vaso",
+     "acierto": false
+    },
+    {
+     "nombre": "AGROSERVICIOS E INVERSIONES COLLCA S.R.L.",
+     "palabras_clave": "de yungar, yungar, ancash correspondiente, vaso de, vaso",
+     "acierto": false
+    },
+    {
+     "nombre": "ASOCIACION DE PEQUEÑOS PRODUCTORES AGROPECUARIOS NUEVO AMANECER",
+     "palabras_clave": "huaylas ejercicio, huaraz periodo, de huaylas, complementacion alimentaria, de complementacion",
+     "acierto": false
+    },
+    {
+     "nombre": "ASOCIACION DE AGRICULTORES LOS DEL VALLE",
+     "palabras_clave": "complementacion alimentaria, de complementacion, complementacion, alimentaria, productos para",
+     "acierto": false
+    },
+    {
+     "nombre": "ASOCIACION DE AGRICULTORES LOS CAMPESINOS DEL VALLE",
+     "palabras_clave": "complementacion alimentaria, de complementacion, complementacion, alimentaria, alimentaria de",
+     "acierto": true
+    },
+    {
+     "nombre": "ALLIN FOOD S.R.L.",
+     "palabras_clave": "ancash periodo, luzuriaga departamento, mariscal luzuriaga, luzuriaga, aco provincia",
+     "acierto": false
+    },
+    {
+     "nombre": "Persona natural (RUC 10415****70)",
+     "palabras_clave": "complementacion alimentaria, de complementacion, complementacion, alimentaria, programa de",
+     "acierto": false
+    },
+    {
+     "nombre": "COORPORACION  BRAVO PONCE EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "palabras_clave": "vaso de, vaso, de amarilis, de leche, leche",
+     "acierto": false
+    },
+    {
+     "nombre": "INVERSIONES GENERALES SAFARI E.I.R.L.",
+     "palabras_clave": "guardia nivel, victor ramos, ramos guardia, avicolas, ii huaraz",
+     "acierto": false
+    }
+   ]
+  },
+  {
+   "entidad": "CORTE SUPERIOR DE JUSTICIA DE HUANUCO",
+   "tipo": "otro",
+   "departamento": "HUANUCO",
+   "proveedores_en_train": 13,
+   "contrataciones_nuevas_en_test": 2,
+   "proveedores_actuales": [
+    {
+     "nombre": "NOVEDADES CAJAS E.I.R.L.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "de uniforme, uniforme, uniforme institucional, institucional para, de confianza"
+    },
+    {
+     "nombre": "INNOVACION HIGIENE OCUPACIONAL S.A.C.-IHO S.A.C.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "ocupacional para, ocupacional, medico ocupacional, un medico, de medico"
+    },
+    {
+     "nombre": "FOCAMHER S&V S.R.L.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "monzon, de monzon, seguridad vigilancia, tingo maria, vigilancia para"
+    },
+    {
+     "nombre": "URBANCAD SOCIEDAD ANONIMA CERRADA",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "fe alegria, de acondicionamiento, acondicionamiento, alegria, ambientes de"
+    },
+    {
+     "nombre": "CONSULTORIA EN TECNOLOGIA INFORMATICA Y SERVICIOS GENERALES E.I.R.L.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "no se, para impresoras, impresoras de, impresoras, se"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "DI FRANZO CORPORATION SOCIEDAD ANONIMA CERRADA - DI FRANZO CORPORATION S.A.C.",
+     "palabras_clave": "jurisdiccional, personal jurisdiccional, jurisdiccional administrativo, de uniforme, uniforme",
+     "acierto": false
+    },
+    {
+     "nombre": "VILEYDY-ADAN Y EVA SOCIEDAD ANONIMA CERRADA - VILEYDY-ADAN Y EVA S.A.C.",
+     "palabras_clave": "jurisdiccional, personal jurisdiccional, jurisdiccional administrativo, administrativo de, de uniforme",
+     "acierto": false
+    },
+    {
+     "nombre": "AKARI SERVICE S.A.C.",
+     "palabras_clave": "ocupacional para, ocupacional, enfermeria ocupacional, medica ocupacional, enfermero",
+     "acierto": false
+    },
+    {
+     "nombre": "SALUD OCUPACIONAL INTEGRADA S.A.C",
+     "palabras_clave": "ocupacional, medico ocupacional, ocupacional para, de medico, un medico",
+     "acierto": false
+    },
+    {
+     "nombre": "OCUPATIONAL HYGIENE PERU S.A.C.",
+     "palabras_clave": "medico ocupacional, ocupacional, ocupacional para, de medico, disergonomicos",
+     "acierto": false
+    },
+    {
+     "nombre": "COSTANERA TEXTIL S.A.C",
+     "palabras_clave": "de uniforme, uniforme, uniforme institucional, jurisdiccional administrativo, personal jurisdiccional",
+     "acierto": false
+    },
+    {
+     "nombre": "Persona natural (RUC 10403****61)",
+     "palabras_clave": "un medico, medico ocupacional, ocupacional, santa contratacion, subcomite",
+     "acierto": false
+    },
+    {
+     "nombre": "SAMITEX SA",
+     "palabras_clave": "jurisdiccional administrativo, uniforme institucional, verano, uniforme, jurisdiccional",
+     "acierto": false
+    },
+    {
+     "nombre": "DIGONZ SOCIEDAD ANONIMA CERRADA DIGONZ S.A.C.",
+     "palabras_clave": "de uniformes, uniformes, uniforme institucional, uniformes para, uniforme",
+     "acierto": false
+    },
+    {
+     "nombre": "Persona natural (RUC 10102****90)",
+     "palabras_clave": "verano invierno, para damas, uniformes institucionales, damas caballeros, invierno",
+     "acierto": true
+    }
+   ]
+  },
+  {
+   "entidad": "GOBIERNO REGIONAL DE MADRE DE DIOS - PROYECTO ESPECIAL MADRE DE DIOS",
+   "tipo": "gobierno_regional",
+   "departamento": "MADRE DE DIOS",
+   "proveedores_en_train": 11,
+   "contrataciones_nuevas_en_test": 1,
+   "proveedores_actuales": [
+    {
+     "nombre": "INVER GOLD S.R.L.",
+     "n_adjudicaciones": 8,
+     "palabras_clave": "provincia tahuamanu, dios servicio, iberia, 30c, pe 30c"
+    },
+    {
+     "nombre": "GRUPO SANTA FE SOCIEDAD ANONIMA CERRADA - GRUPO SANTA FE S.A.C.",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "tipo ip, ip, ip 42, portland, cemento portland"
+    },
+    {
+     "nombre": "TECNOMETAL S.C.R.L.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "azangaro, costo segun, de azangaro, tirapata provincia, purina de"
+    },
+    {
+     "nombre": "MULTISERVICIOS GAMARRITA E.I.R.L.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "tambopata madre, chorrillos tupac, amaru tres, centro pastora, vecinal centro"
+    },
+    {
+     "nombre": "CORPORACION AUTOMOTRIZ DEL SUR S.A.",
+     "n_adjudicaciones": 1,
+     "palabras_clave": "doble cabina, 4x4, cabina, pick up, pick"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "MADERERA RV PERU E.I.R.L.",
+     "palabras_clave": "30c, pe 30c, vecinal inicio, tramo sol, 30c tramo",
+     "acierto": false
+    },
+    {
+     "nombre": "Persona natural (RUC 10048****89)",
+     "palabras_clave": "de tambopata, grava, tambopata, chancada, tres islas",
+     "acierto": false
+    },
+    {
+     "nombre": "FUNDO ALIMENTARIA DE AMAZONIA S.A.C.",
+     "palabras_clave": "tambopata madre, agmal, naciente huacamayo, tramo sol, via interoceanica",
+     "acierto": true
+    },
+    {
+     "nombre": "INTEROCEANICA DISTRIBUYE S.A.C.",
+     "palabras_clave": "de tambopata, tambopata, ip 42, tambopata provincia, tipo ip",
+     "acierto": false
+    },
+    {
+     "nombre": "INVERSIONES GASOIL EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA - INVERSIONES GASOIL E.I.R.L.",
+     "palabras_clave": "para parque, madre de, amaru tres, chorrillos tupac, pastora chorrillos",
+     "acierto": false
+    },
+    {
+     "nombre": "CONCRETOS PREMEZCLADO Y AGREGADOS MADRE DE DIOS S.R.L. - CONCREMAD S.R.L.",
+     "palabras_clave": "el castanal, castanal, de tambopata, fc, tambopata",
+     "acierto": false
+    },
+    {
+     "nombre": "ZAMORA CORPORATION S.R.L.",
+     "palabras_clave": "puzolanico tipo, puzolanico, portland puzolanico, de tambopata, tambopata",
+     "acierto": false
+    },
+    {
+     "nombre": "AVP CONSULTORA Y CONSTRUCTORA E.I.R.L.",
+     "palabras_clave": "huacamayo distrito, naciente huacamayo, tramo sol, 30c tramo, interoceanica pe",
+     "acierto": false
+    },
+    {
+     "nombre": "INGENIERIA, SUMINISTROS Y MONTAJES ELECTRICOS Y CIVILES SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITA",
+     "palabras_clave": "de utilizacion, utilizacion, 22 9kv, 9kv, kva",
+     "acierto": false
+    },
+    {
+     "nombre": "Persona natural (RUC 10428****25)",
+     "palabras_clave": "tornillo, madera tornillo, tornillo para, tambopata, de tambopata",
+     "acierto": false
+    }
+   ]
+  },
+  {
+   "entidad": "MUNICIPALIDAD DISTRITAL DE HUANCARANI",
+   "tipo": "municipalidad",
+   "departamento": "CUSCO",
+   "proveedores_en_train": 27,
+   "contrataciones_nuevas_en_test": 7,
+   "proveedores_actuales": [
+    {
+     "nombre": "GRUPO SANTA FE SOCIEDAD ANONIMA CERRADA - GRUPO SANTA FE S.A.C.",
+     "n_adjudicaciones": 4,
+     "palabras_clave": "tipo ip, ip, ip 42, portland, cemento portland"
+    },
+    {
+     "nombre": "CORPORACION CLABE S.R.L.",
+     "n_adjudicaciones": 3,
+     "palabras_clave": "ip 42, tipo ip, ip, cemento portland, portland"
+    },
+    {
+     "nombre": "PILLAHUATA S.A.C.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "quispicanchi del, de marcapata, marcapata, marcapata de, de quispicanchi"
+    },
+    {
+     "nombre": "AGRONEGOCIOS MUNDO RURAL EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "veterinarios, veterinarios para, semen, de semen, productivo en"
+    },
+    {
+     "nombre": "Persona natural (RUC 10735****06)",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "toros, canchis del, plastico, de canchis, 0035"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "A & V GRIFO EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA - A & V GRIFO E.I.R.L.",
+     "palabras_clave": "de quinota, quinota, huarocondo zurite, quinota de, zurite",
+     "acierto": false
+    },
+    {
+     "nombre": "INVERSIONES & DISTRIBUCIONES D'MHARO S.A.C.",
+     "palabras_clave": "ip 42, tipo ip, ip, portland, cemento portland",
+     "acierto": false
+    },
+    {
+     "nombre": "GM PROVEEDORES SOCIEDAD COMERCIAL DE RESPONSABILIDAD LIMITADA",
+     "palabras_clave": "tipo ip, ayraccollana, barra de, barra, ip",
+     "acierto": false
+    },
+    {
+     "nombre": "MAFETSUR INVERSIONES GENERALES SOCIEDAD ANONIMA CERRADA",
+     "palabras_clave": "tipo ip, ip, portland, cemento portland, ip 42",
+     "acierto": true
+    },
+    {
+     "nombre": "CODECO E.I.R.L",
+     "palabras_clave": "ip 42, tipo ip, ip, cemento portland, portland",
+     "acierto": false
+    },
+    {
+     "nombre": "Persona natural (RUC 10444****08)",
+     "palabras_clave": "acero corrugado, corrugado para, corrugado, acero, barras de",
+     "acierto": false
+    },
+    {
+     "nombre": "FERRO ACEROS DEL SUR EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "palabras_clave": "acero corrugado, corrugado, de barras, barras, barras de",
+     "acierto": true
+    },
+    {
+     "nombre": "INVERSIONES CECO. S.A.C",
+     "palabras_clave": "tipo ip, ip, cemento, de cemento, ip 42",
+     "acierto": false
+    },
+    {
+     "nombre": "Persona natural (RUC 10238****94)",
+     "palabras_clave": "cu, emp cu, de colquemarca, tramo desvio, desvio",
+     "acierto": false
+    },
+    {
+     "nombre": "EMPRESA  ZOHE SAC",
+     "palabras_clave": "acero corrugado, corrugado, corrugado para, ladrillo, de ladrillos",
+     "acierto": false
+    }
+   ]
+  },
+  {
+   "entidad": "MUNICIPALIDAD DISTRITAL DE EL TAMBO",
+   "tipo": "municipalidad",
+   "departamento": "JUNIN",
+   "proveedores_en_train": 34,
+   "contrataciones_nuevas_en_test": 7,
+   "proveedores_actuales": [
+    {
+     "nombre": "OSLO SOCIEDAD ANONIMA - OSLO S.A.",
+     "n_adjudicaciones": 5,
+     "palabras_clave": "fc, concreto premezclado, premezclado, premezclado fc, cm2 para"
+    },
+    {
+     "nombre": "ESTACION DE SERVICIOS Y GASOCENTRO ANGULO S.A.C.",
+     "n_adjudicaciones": 4,
+     "palabras_clave": "ingenieria biomedica, biomedica servicios, biomedica, el tambo, licuado de"
+    },
+    {
+     "nombre": "Persona natural (RUC 10074****60)",
+     "n_adjudicaciones": 4,
+     "palabras_clave": "psje, tramo jr, jr, portland tipo, portland"
+    },
+    {
+     "nombre": "MATERIALES Y SERVICIOS PARA CONSTRUCCION Y DISTRIBUCION S.A.C.",
+     "n_adjudicaciones": 4,
+     "palabras_clave": "kgs, caraz de, de cemento, psje, portland tipo"
+    },
+    {
+     "nombre": "ESTACION DE SERVICIOS GRIFO EL TRIUNFO S.A.C.",
+     "n_adjudicaciones": 2,
+     "palabras_clave": "inbp, las comandancias, comandancias departamentales, comandancias, bomberos del"
+    }
+   ],
+   "recomendados": [
+    {
+     "nombre": "Persona natural (RUC 10200****43)",
+     "palabras_clave": "cocinas, licuado de, licuado, gas licuado, de gas",
+     "acierto": false
+    },
+    {
+     "nombre": "DISTRIBUIDORA ERICK S.R.L",
+     "palabras_clave": "de chupaca, chupaca, chupaca provincia, junin de, de junin",
+     "acierto": false
+    },
+    {
+     "nombre": "INVERSIONES Y SERVICIOS ZENTROPOLY S.A.C.",
+     "palabras_clave": "chupaca, chupaca junin, de chupaca, los heroes, obreros sitraom",
+     "acierto": false
+    },
+    {
+     "nombre": "CONSTRUCTORA E INVERSIONES M & R S.A.C.",
+     "palabras_clave": "de ocopa, ocopa, de concepcion, de cemento, cemento",
+     "acierto": true
+    },
+    {
+     "nombre": "SAGESA INGENIEROS S.A.C.",
+     "palabras_clave": "huancayo, fc 210, de concreto, cm2 para, 210 kg",
+     "acierto": false
+    },
+    {
+     "nombre": "INVERSIONES GENERALES AQUIRA EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "palabras_clave": "de acobamba, acobamba, pancan provincia, de andabamba, pancan",
+     "acierto": false
+    },
+    {
+     "nombre": "EMPRESA DE TRANSPORTES IMPERIAL - NUEVO IMPERIAL LA FLORIDA Nº 06 S.A.",
+     "palabras_clave": "yauyos de, diferentes maquinarias, maquinarias del, de departamento, nuevo imperial",
+     "acierto": false
+    },
+    {
+     "nombre": "CORPORACION KAZUKI  MERCURY EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA",
+     "palabras_clave": "de chupaca, chupaca, chupaca provincia, chupaca junin, jr muqui",
+     "acierto": false
+    },
+    {
+     "nombre": "GRUPO B & C GERENCIA Y CONSTRUCCION SOCIEDAD ANONIMA CERRADA",
+     "palabras_clave": "psje, concreto premezclado, premezclado, huancayo junin, fc 210",
+     "acierto": false
+    },
+    {
+     "nombre": "GLG INVERSIONES S.A.C.",
+     "palabras_clave": "gasohol premium, premium, combustible gasohol, unidades motorizadas, motorizadas de",
+     "acierto": false
+    }
+   ]
+  }
+ ]
+}
