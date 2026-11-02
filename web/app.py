@@ -30,6 +30,14 @@ pagina = st.navigation(
             st.Page("pages/8_Apriori_FPGrowth.py", title="Apriori y FP-Growth", icon="🧺"),
             st.Page("pages/7_Reglas_Asociacion.py", title="Reglas", icon="🔗"),
         ],
+        "Proyecto 2: grafos, clustering y recomendación": [
+            st.Page("pages/11_Base_Relacional.py", title="Base relacional", icon="🗂️"),
+            st.Page("pages/12_Grafo.py", title="Grafo de co-participación", icon="🕸️"),
+            st.Page("pages/13_Clustering.py", title="Clustering", icon="🎯"),
+            st.Page("pages/14_Rec_Contenido.py", title="Recomendador por contenido", icon="🧬"),
+            st.Page("pages/15_Rec_Colaborativo.py", title="Recomendador colaborativo", icon="🤝"),
+            st.Page("pages/16_Evaluacion_Hibrido.py", title="Evaluación e híbrido", icon="⚖️"),
+        ],
         "Cierre": [
             st.Page("pages/10_Discusion_Critica.py", title="Discusión crítica", icon="⚖️"),
         ],
