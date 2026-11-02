@@ -111,6 +111,56 @@ Rutas que debes ajustar:
 - Los notebooks `B_*` usan `Path.home() / "dm"`. Cambia `PROJECT_ROOT` a tu carpeta.
 - Los notebooks `B_01.1`, `B_01.2` y `C_*` usan `/content/drive/...` (Google Drive en Colab).
 
+## Proyecto Integrador 2: grafos, clustering y aprendizaje de representación
+Continúa el proyecto con las Partes I, II y III de la guía del Proyecto 2, sobre los mismos Parquet. Se **agregan** 6 notebooks (`P2_*`), 31 archivos de resultados (`web_artefactos/p2/`) y 6 módulos de la página; no se modificó nada de lo anterior.
+
+**Preguntas de interés**
+1. **¿Qué tipos de proveedores existen según cómo contratan con el Estado, y cuáles se salen de su tipo?** Tres tipos: *no ganan* (51%), *ganan poco* (37%) y *activos en varias entidades* (13%); con k = 5 se afinan en cinco grupos (por ejemplo, entre los que no ganan se separan los que «pasaron de largo», 4 meses activos, de los que «insisten», 20 meses). Se salen del tipo los proveedores muy grandes y generalistas (por ejemplo, 1,427 adjudicaciones con 262 entidades); de 30 casos extremos, 29 son de ese tipo.
+2. **¿Qué proveedores son sustitutos entre sí para una misma entidad o categoría, y qué afinidades entidad–proveedor son inusuales?** Los proveedores parecidos por contenido comparten entidad en 52.4% de los casos (al azar: 2.8%) y se presentan a los mismos procesos en 38.7% (al azar: 1.4%). Las afinidades inusuales (843 pares, 2% de 42,163) son sobre todo servicios de apoyo en entidades que compran otras cosas.
+3. *(Partes IV–VI, siguiente etapa)* Qué actores concentran el mercado y qué comunidades forman. Aquí solo se construye el grafo de co-participación (Parte I).
+
+Todo es una **señal descriptiva para revisar**, no una acusación.
+
+**Resultados principales**
+| Qué | Resultado | Notebook |
+|---|---|---|
+| Universo entidad × proveedor | 9,833 proveedores × 2,331 entidades; 44,205 pares en train; densidad 0.19%. Corte 2026-03-01. Consorcios (RUC de 7 dígitos, 21.8% de las adjudicaciones) fuera | `P2_01` |
+| Grafo de co-participación | 40,106 proveedores y 1,482,754 aristas (peso ≥ 2, tope 30 postores); 99.2% en un solo bloque conectado | `P2_02` |
+| Clustering de proveedores | K-Means k = 5 (el codo de la inercia se frena con fuerza después de 5; silueta 0.462, igual que con k = 4; estabilidad ARI 0.98, la de k = 4 es la más baja entre 3 y 6, 0.93). En entidades k = 6, pero con silueta (0.25) y estabilidad (0.80) bajas: son tendencias. Los casos extremos se buscan en todos los puntos. DBSCAN/HDBSCAN y jerárquico muestran un núcleo denso y dos grandes bloques | `P2_03` |
+| Recomendador por contenido | TF-IDF + proyección a 512 + HNSW (recall@10 98.8% frente a exacta); recall@10 en test 0.080 | `P2_04` |
+| Recomendador colaborativo | ALS (128 factores, regularización 1, alpha 10) recall@10 en test 0.136 (intervalo 95%: 0.121 a 0.151; 5 semillas: 0.137 ± 0.002) frente a 0.022 de «populares»; vecindario user–user (K = 50) 0.119 y item–item (K = 800) 0.083. User–user gana porque acierta con proveedores grandes (46% de su top-10 son los 100 más populares). Las rejillas se ampliaron hasta que los mejores valores quedaron dentro | `P2_05`, `P2_06` |
+| Híbrido | Con α elegido en validación (0.1, el mismo en tres cortes): 0.111, no supera a ALS solo (diferencia creíble); en el test el mejor α sería ≈ 0.6 (0.152), pero eso no se usó para elegir. Los proveedores de la validación tienen menos historia que los del test (mediana 4 frente a 6 entidades) | `P2_06` |
+
+**Notebooks nuevos** (ejecutar en este orden; todos leen los Parquet del Proyecto 1 o los que deja el notebook anterior)
+| Notebook | Motor | Por qué | Artefactos que exporta (`web_artefactos/p2/`) |
+|---|---|---|---|
+| `P2_01_Base_Relacional` | Spark local | Une y agrega millones de filas; prueba de particionamiento | `reporte_base.json` |
+| `P2_02_Grafo_Coparticipacion` | Spark local + SciPy | La auto-unión de postores por proceso es grande | `grafo_umbrales.csv`, `grafo_grado.csv`, `grafo_resumen.json` |
+| `P2_03_Clustering` | scikit-learn + SciPy | Tablas chicas (miles de filas) en una sola máquina | `pca_varianza.csv`, `kmeans_k.csv`, `kmeans_estabilidad.csv`, `kmeans_perfiles.csv`, `puntos.csv`, `dbscan_grid.csv`, `dbscan_kdist.csv`, `dendrograma.json`, `outliers.csv` |
+| `P2_04_Recomendador_Contenido` | scikit-learn + FAISS | Índice HNSW en memoria | `contenido_ejemplos.json` |
+| `P2_05_Recomendador_Colaborativo` | NumPy + Spark MLlib (ALS) | ALS es la parte que pide Spark | `vecindario_k.csv`, `vecindario_user_k.csv`, `vecindario_variantes.csv`, `als_parametros.csv`, `als_alpha.csv` |
+| `P2_06_Evaluacion_Hibrido` | NumPy + Spark MLlib | Evalúa en el test (con intervalos, semillas y cobertura), elige α con tres cortes, sustitutos y afinidades | `eval_resultados.csv`, `eval_ic.csv`, `eval_diferencias.csv`, `cobertura.csv`, `als_semillas.csv`, `diagnostico_grado.csv`, `reporte_evaluacion.json`, `hibrido_alfa.csv`, `sustitutos.json`, `sustitutos_categoria.csv`, `afinidades_inusuales.csv`, `ejemplos_recomendaciones.json` |
+
+Las rutas se leen de variables de entorno (`P2_PARQUET`: Parquet del Proyecto 1; `P2_DATOS`: tablas intermedias que van dejando los notebooks; `P2_WEB`: salida para la página). Si no existen, usan carpetas de Google Drive como en Colab. Las tablas intermedias (Parquet y `.npy`) **no están en el repositorio**: se regeneran ejecutando los notebooks en orden.
+
+| Módulo nuevo (`web/pages/`) | Parte | Controles en vivo |
+|---|---|---|
+| Base relacional | I | (embudo, universo y particiones) |
+| Grafo de co-participación | I | peso mínimo de las aristas |
+| Clustering | II | proveedores o entidades, k, `eps`, `min_samples` y tamaño mínimo de grupo (con gráfico de estabilidad y de k-distancias) |
+| Recomendador por contenido | III | entidad de ejemplo |
+| Recomendador colaborativo | III | vecinos (K) en item–item y user–user, factores y regularización |
+| Evaluación e híbrido | III | top-k, métrica, α, proveedor, tipo de entidad y monto mínimo |
+
+**Datos personales:** igual que arriba, los RUC que no empiezan con 20 se muestran enmascarados y el nombre de una persona natural se reemplaza por «Persona natural (RUC 10283****79)».
+
+**Limitaciones del Proyecto 2**
+- Los consorcios se dejaron fuera: un proveedor que gana solo dentro de consorcios aparece como «no gana».
+- El test cubre pocos meses (desde 2026-03-01); las métricas pueden cambiar con más datos.
+- El peso del híbrido elegido en validación no coincidió con el mejor en el test (ver `P2_06`).
+- Los grupos de entidades son poco estables (ARI ≈ 0.80); es una sola partición temporal, así que los intervalos miden el azar al elegir entidades, no el cambio de periodo.
+- Las afinidades inusuales y los casos extremos tienen explicaciones normales frecuentes (servicios de apoyo, pocos procesos).
+
 ## Fuente y licencia
 - Fuente: datos abiertos de contrataciones públicas del Perú (SEACE) en formato OCDS, publicados por la OECE a través de la Open Contracting Partnership.
 - Licencia: CC BY 4.0.
