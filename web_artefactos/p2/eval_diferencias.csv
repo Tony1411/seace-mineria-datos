@@ -1,0 +1,7 @@
+comparacion,dif_recall@10,ic_bajo,ic_alto,distinguible
+vecindario user–user − vecindario item–item,0.036,0.0235,0.049,True
+ALS − vecindario user–user,0.0165,0.0056,0.028,True
+ALS − híbrido (α=0.1),0.0244,0.0128,0.0371,True
+híbrido (α=0.1) − contenido,0.0312,0.0234,0.0388,True
+vecindario item–item − contenido,0.003,-0.0103,0.0164,False
+ALS − populares (referencia),0.1132,0.0974,0.1289,True

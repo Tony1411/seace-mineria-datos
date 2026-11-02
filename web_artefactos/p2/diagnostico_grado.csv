@@ -1,0 +1,10 @@
+grupo_del_proveedor,modelo,recall@10,pares_nuevos,entidades
+≤2 entidades,vecindario item–item,0.0675,915,560
+≤2 entidades,vecindario user–user,0.0132,915,560
+≤2 entidades,ALS,0.0308,915,560
+3 a 9 entidades,vecindario item–item,0.058,2374,958
+3 a 9 entidades,vecindario user–user,0.0512,2374,958
+3 a 9 entidades,ALS,0.0928,2374,958
+10 o más entidades,vecindario item–item,0.1097,1637,768
+10 o más entidades,vecindario user–user,0.2496,1637,768
+10 o más entidades,ALS,0.2205,1637,768

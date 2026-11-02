@@ -1,0 +1,37 @@
+modelo,segmento,k,precision,recall,n_entidades
+populares (referencia),todas,5,0.0078,0.0129,1331
+populares (referencia),todas,10,0.0074,0.0223,1331
+populares (referencia),todas,20,0.0066,0.0421,1331
+populares (referencia),pocas (≤9 proveedores),10,0.0029,0.0166,478
+populares (referencia),medias (10–26),10,0.0067,0.0246,418
+populares (referencia),muchas (>26),10,0.0131,0.0265,435
+contenido,todas,5,0.0273,0.0534,1331
+contenido,todas,10,0.0221,0.0799,1331
+contenido,todas,20,0.0178,0.1219,1331
+contenido,pocas (≤9 proveedores),10,0.0163,0.1111,478
+contenido,medias (10–26),10,0.0211,0.083,418
+contenido,muchas (>26),10,0.0294,0.0428,435
+vecindario item–item,todas,5,0.034,0.056,1331
+vecindario item–item,todas,10,0.0266,0.083,1331
+vecindario item–item,todas,20,0.0209,0.1282,1331
+vecindario item–item,pocas (≤9 proveedores),10,0.0146,0.0982,478
+vecindario item–item,medias (10–26),10,0.0239,0.0858,418
+vecindario item–item,muchas (>26),10,0.0423,0.0636,435
+vecindario user–user,todas,5,0.0452,0.0822,1331
+vecindario user–user,todas,10,0.036,0.119,1331
+vecindario user–user,todas,20,0.0276,0.1809,1331
+vecindario user–user,pocas (≤9 proveedores),10,0.0224,0.1437,478
+vecindario user–user,medias (10–26),10,0.0352,0.1306,418
+vecindario user–user,muchas (>26),10,0.0517,0.0808,435
+ALS,todas,5,0.0469,0.087,1331
+ALS,todas,10,0.0376,0.1356,1331
+ALS,todas,20,0.0301,0.2057,1331
+ALS,pocas (≤9 proveedores),10,0.0257,0.1708,478
+ALS,medias (10–26),10,0.0364,0.1419,418
+ALS,muchas (>26),10,0.052,0.0908,435
+híbrido (α=0.1),todas,5,0.0385,0.0777,1331
+híbrido (α=0.1),todas,10,0.0296,0.1111,1331
+híbrido (α=0.1),todas,20,0.0226,0.1547,1331
+híbrido (α=0.1),pocas (≤9 proveedores),10,0.0228,0.1565,478
+híbrido (α=0.1),medias (10–26),10,0.028,0.1164,418
+híbrido (α=0.1),muchas (>26),10,0.0386,0.0562,435

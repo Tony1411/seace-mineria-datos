@@ -1,0 +1,7 @@
+modelo,proveedores_distintos,cobertura_pct,pct_recomendaciones_en_top100_populares
+populares (referencia),19,0.2,100.0
+contenido,3300,33.6,6.4
+vecindario item–item,4767,48.5,12.4
+vecindario user–user,1936,19.7,45.9
+ALS,3234,32.9,19.2
+híbrido (α=0.1),3343,34.0,9.3
