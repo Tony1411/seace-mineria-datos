@@ -47,11 +47,11 @@ La discusión crítica (valor, pérdida por aproximar, Spark vs local, escala 10
 
 ## Estructura del repositorio
 ```
-web/                  Aplicación Streamlit (app.py = menú, inicio.py = portada, pages/ = módulos)
-web_artefactos/       JSON y textos precalculados (datos, similitud, ANN, discusión)
+web/                  Aplicación Streamlit (app.py = menú, inicio.py = portada, pages/ = módulos; utils_p2.py lee los resultados del Proyecto 2)
+web_artefactos/       JSON y textos precalculados (datos, similitud, ANN, discusión); p2/ = 31 resultados del Proyecto 2
 artifacts/            CSV precalculados (EDA, Bloom, CMS, DGIM, reglas)
 src/streaming/        Implementaciones de Bloom filter, Count-Min Sketch y DGIM
-notebooks/            Experimentos originales
+notebooks/            B_* y C_* = Proyecto 1; P2_01 a P2_06 = Proyecto 2
 requirements.txt      Dependencias solo de la web
 requirements-notebooks.txt  Dependencias para reproducir los notebooks
 ```
@@ -112,7 +112,7 @@ Rutas que debes ajustar:
 - Los notebooks `B_01.1`, `B_01.2` y `C_*` usan `/content/drive/...` (Google Drive en Colab).
 
 ## Proyecto Integrador 2: grafos, clustering y aprendizaje de representación
-Continúa el proyecto con las Partes I, II y III de la guía del Proyecto 2, sobre los mismos Parquet. Se **agregan** 6 notebooks (`P2_*`), 31 archivos de resultados (`web_artefactos/p2/`) y 6 módulos de la página; no se modificó nada de lo anterior.
+Continúa el proyecto con las Partes I, II y III de la guía del Proyecto 2, sobre los mismos Parquet. Se **agregan** 6 notebooks (`P2_*`), 31 archivos de resultados (`web_artefactos/p2/`) y 6 módulos de la página. Lo anterior no se modificó; solo se amplió el menú (`web/app.py`) y las dependencias de los notebooks.
 
 **Preguntas de interés**
 1. **¿Qué tipos de proveedores existen según cómo contratan con el Estado, y cuáles se salen de su tipo?** Tres tipos: *no ganan* (51%), *ganan poco* (37%) y *activos en varias entidades* (13%); con k = 5 se afinan en cinco grupos (por ejemplo, entre los que no ganan se separan los que «pasaron de largo», 4 meses activos, de los que «insisten», 20 meses). Se salen del tipo los proveedores muy grandes y generalistas (por ejemplo, 1,427 adjudicaciones con 262 entidades); de 30 casos extremos, 29 son de ese tipo.
