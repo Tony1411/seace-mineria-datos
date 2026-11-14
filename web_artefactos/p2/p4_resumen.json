@@ -1,0 +1,35 @@
+{
+ "grafo_pagerank": {
+  "descripcion": "Arista A → B: A ofertó y no ganó, B ganó en el mismo proceso. Peso = procesos en que ocurrió.",
+  "nodos": 43115,
+  "aristas": 508252,
+  "dead_ends": 5110,
+  "sin_entrada": 24754,
+  "pct_dead_ends": 11.9,
+  "pct_sin_entrada": 57.4,
+  "parametros": {
+   "min_participaciones": 5,
+   "tope_postores": 30,
+   "beta": 0.85
+  }
+ },
+ "pagerank": {
+  "iteraciones": 95,
+  "diferencia_vs_networkx": 2.47e-09,
+  "masa_top1pct": 0.1672,
+  "n_top1pct": 431,
+  "spearman_con_victorias": 0.881,
+  "spearman_con_participaciones": 0.352,
+  "spearman_con_tasa_exito": 0.797
+ },
+ "hits": {
+  "entidades": 2331,
+  "proveedores": 9833,
+  "enlaces": 44205,
+  "iteraciones": 80,
+  "coseno_con_svd": 1.0,
+  "spearman_autoridad_vs_n_entidades": 0.525,
+  "spearman_autoridad_vs_pagerank": 0.238,
+  "spearman_hub_vs_n_proveedores": 0.848
+ }
+}
