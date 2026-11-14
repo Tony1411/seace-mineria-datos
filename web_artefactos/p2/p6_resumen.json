@@ -1,0 +1,30 @@
+{
+ "nucleo": {
+  "descripcion": "Proveedores con ≥ 120 participaciones, aristas con peso ≥ 2, componente mayor.",
+  "nodos": 3489,
+  "aristas": 328297,
+  "grado_medio": 188.2
+ },
+ "parametros": {
+  "D": 16,
+  "num_walks": 10,
+  "largo": 40,
+  "ventana": 5,
+  "p_base": 1.0,
+  "q_base": 0.5,
+  "K": 12,
+  "min_grande": 100,
+  "proveedores_en_comunidades_grandes": 3219
+ },
+ "linea_base_pureza_azar": 0.12,
+ "varianza_svd_16": 0.553,
+ "correlacion_con_grado": {
+  "svd_sin_normalizar": 0.79,
+  "svd_normalizado": 0.38,
+  "node2vec": 0.23
+ },
+ "ari_vs_tipos_parte2": {
+  "SVD": -0.005,
+  "node2vec": -0.003
+ }
+}
