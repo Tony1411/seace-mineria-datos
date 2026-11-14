@@ -1,0 +1,46 @@
+{
+ "grafo": {
+  "nodos": 40106,
+  "aristas": 1482754
+ },
+ "subgrafo": {
+  "descripcion": "300 proveedores al azar (semilla 42) entre los de ≥ 50 participaciones; componente conexa mayor.",
+  "nodos": 270,
+  "aristas": 828,
+  "densidad": 0.0228
+ },
+ "gn": {
+  "mejor_Q": 0.5776,
+  "comunidades": 30,
+  "segundos": 18.0
+ },
+ "escala": {
+  "horas_estimadas_un_betweenness_grafo_completo": 13.0
+ },
+ "espectral": {
+  "mejor_Q": 0.5176,
+  "k": 11,
+  "k_eigengap": 2
+ },
+ "louvain_completo_resolucion_1": {
+  "resolucion": 1.0,
+  "comunidades": 135.0,
+  "Q": 0.6483,
+  "mayor": 7219.0,
+  "pct_en_las_10_mayores": 83.2,
+  "comunidades_de_10_o_mas": 22.0,
+  "comunidades_de_menos_de_10": 113.0,
+  "segundos": 27.4
+ },
+ "bigclam": {
+  "C": 8,
+  "umbral_delta": 0.1519,
+  "comunidades_con_3_o_mas": 8,
+  "nodos_solapados": 22,
+  "pct_solapados": 8.1,
+  "ari_vs_louvain": 0.524,
+  "densidad_solapados": 0.156,
+  "densidad_media_comunidades": 0.235,
+  "densidad_subgrafo": 0.023
+ }
+}

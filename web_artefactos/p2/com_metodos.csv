@@ -1,0 +1,5 @@
+metodo,necesita_k,comunidades,Q,segundos,escala
+Girvan–Newman,No (se elige con Q),30,0.578,18.0,No: muy lento
+Espectral,Sí (eigengap o Q),11,0.518,,No: matriz n×n
+LPA (mediana de 10 semillas),No,23,0.566,0.005,Sí
+Louvain (mejor de 10 semillas),No,7,0.615,0.008,Sí
