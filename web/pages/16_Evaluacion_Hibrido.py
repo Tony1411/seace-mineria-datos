@@ -190,4 +190,4 @@ with st.expander("Límites"):
 """)
 
 st.caption("Notebook: `P2_06_Evaluacion_Hibrido`. Los controles muestran resultados precalculados.")
-siguiente("pages/10_Discusion_Critica.py", "Discusión crítica")
+siguiente("pages/17_PageRank_HITS.py", "PageRank y HITS")

@@ -14,7 +14,7 @@ g = res["grafo_final"]
 encabezado(
     "¿Qué proveedores se encuentran con frecuencia en los mismos procesos, y esa red separa mercados?",
     f"Con 2 procesos en común o más, el grafo tiene {g['nodos']:,} proveedores y {g['aristas']:,} conexiones, "
-    f"y {g['pct_mayor_componente']}% está en un solo bloque conectado. La red por sí sola no separa mercados; eso se intenta con comunidades (Partes IV–VI, siguiente etapa).",
+    f"y {g['pct_mayor_componente']}% está en un solo bloque conectado. La red por sí sola no separa mercados; eso se estudia con PageRank, comunidades y embeddings (Partes IV a VI, páginas 17 a 19; la discusión está en la página 20).",
 )
 
 st.markdown(f"""
