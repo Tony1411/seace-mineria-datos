@@ -48,10 +48,10 @@ La discusión crítica (valor, pérdida por aproximar, Spark vs local, escala 10
 ## Estructura del repositorio
 ```
 web/                  Aplicación Streamlit (app.py = menú, inicio.py = portada, pages/ = módulos; utils_p2.py lee los resultados del Proyecto 2)
-web_artefactos/       JSON y textos precalculados (datos, similitud, ANN, discusión); p2/ = 31 resultados del Proyecto 2
+web_artefactos/       JSON y textos precalculados (datos, similitud, ANN, discusión); p2/ = 58 resultados del Proyecto 2
 artifacts/            CSV precalculados (EDA, Bloom, CMS, DGIM, reglas)
 src/streaming/        Implementaciones de Bloom filter, Count-Min Sketch y DGIM
-notebooks/            B_* y C_* = Proyecto 1; P2_01 a P2_06 = Proyecto 2
+notebooks/            B_* y C_* = Proyecto 1; P2_01 a P2_09 = Proyecto 2
 requirements.txt      Dependencias solo de la web
 requirements-notebooks.txt  Dependencias para reproducir los notebooks
 ```
@@ -112,12 +112,12 @@ Rutas que debes ajustar:
 - Los notebooks `B_01.1`, `B_01.2` y `C_*` usan `/content/drive/...` (Google Drive en Colab).
 
 ## Proyecto Integrador 2: grafos, clustering y aprendizaje de representación
-Continúa el proyecto con las Partes I, II y III de la guía del Proyecto 2, sobre los mismos Parquet. Se **agregan** 6 notebooks (`P2_*`), 31 archivos de resultados (`web_artefactos/p2/`) y 6 módulos de la página. Lo anterior no se modificó; solo se amplió el menú (`web/app.py`) y las dependencias de los notebooks.
+Continúa el proyecto con las Partes I a VII de la guía del Proyecto 2, sobre los mismos Parquet. Se **agregan** 9 notebooks (`P2_*`), 58 archivos de resultados (`web_artefactos/p2/`) y 10 módulos de la página. Las Partes I a III se construyeron primero; las Partes IV a VII se agregaron después sin modificar lo anterior, salvo el menú (`web/app.py`), la portada (`web/inicio.py`), los enlaces «Siguiente» de dos páginas y las dependencias de los notebooks.
 
 **Preguntas de interés**
 1. **¿Qué tipos de proveedores existen según cómo contratan con el Estado, y cuáles se salen de su tipo?** Tres tipos: *no ganan* (51%), *ganan poco* (37%) y *activos en varias entidades* (13%); con k = 5 se afinan en cinco grupos (por ejemplo, entre los que no ganan se separan los que «pasaron de largo», 4 meses activos, de los que «insisten», 20 meses). Se salen del tipo los proveedores muy grandes y generalistas (por ejemplo, 1,427 adjudicaciones con 262 entidades); de 30 casos extremos, 29 son de ese tipo.
 2. **¿Qué proveedores son sustitutos entre sí para una misma entidad o categoría, y qué afinidades entidad–proveedor son inusuales?** Los proveedores parecidos por contenido comparten entidad en 52.4% de los casos (al azar: 2.8%) y se presentan a los mismos procesos en 38.7% (al azar: 1.4%). Las afinidades inusuales (843 pares, 2% de 42,163) son sobre todo servicios de apoyo en entidades que compran otras cosas.
-3. *(Partes IV–VI, siguiente etapa)* Qué actores concentran el mercado y qué comunidades forman. Aquí solo se construye el grafo de co-participación (Parte I).
+3. **¿Qué actores concentran el mercado, qué comunidades forman y cómo se representa a cada proveedor?** *(Partes IV a VI)* El 1% de proveedores con más PageRank (431) reúne 16.7% del total; el ranking de arriba casi no cambia entre β = 0.50 y 0.95. Louvain encuentra 135 comunidades en 40,106 proveedores (Q = 0.65; 22 con al menos 10 proveedores), separadas sobre todo por **rubro** (bienes, servicios u obras) y menos por región. Con SVD y con node2vec, entre 91% y 93% de los 10 vecinos más cercanos de un proveedor está en su misma comunidad (12% al azar); los embeddings no coinciden con los tipos de la Parte II (ARI ≈ 0): son dos miradas distintas.
 
 Todo es una **señal descriptiva para revisar**, no una acusación.
 
@@ -130,6 +130,11 @@ Todo es una **señal descriptiva para revisar**, no una acusación.
 | Recomendador por contenido | TF-IDF + proyección a 512 + HNSW (recall@10 98.8% frente a exacta); recall@10 en test 0.080 | `P2_04` |
 | Recomendador colaborativo | ALS (128 factores, regularización 1, alpha 10) recall@10 en test 0.136 (intervalo 95%: 0.121 a 0.151; 5 semillas: 0.137 ± 0.002) frente a 0.022 de «populares»; vecindario user–user (K = 50) 0.119 y item–item (K = 800) 0.083. User–user gana porque acierta con proveedores grandes (46% de su top-10 son los 100 más populares). Las rejillas se ampliaron hasta que los mejores valores quedaron dentro | `P2_05`, `P2_06` |
 | Híbrido | Con α elegido en validación (0.1, el mismo en tres cortes): 0.111, no supera a ALS solo (diferencia creíble); en el test el mejor α sería ≈ 0.6 (0.152), pero eso no se usó para elegir. Los proveedores de la validación tienen menos historia que los del test (mediana 4 frente a 6 entidades) | `P2_06` |
+| PageRank (Parte IV) | Grafo dirigido «A pierde frente a B» (43,115 proveedores, 508,252 aristas; 11.9% son *dead ends*). β = 0.85, 95 iteraciones; coincide con NetworkX (diferencia 2·10⁻⁹). Correlación de rangos con las victorias: 0.88. Con β de 0.50 a 0.95 (todos convergen; 0.95 necesita 295 iteraciones), 8 a 10 de los 10 primeros se mantienen | `P2_07` |
+| HITS (Parte IV) | Entidades = hubs (2,331), proveedores = authorities (9,833). La autoridad coincide con el primer vector singular de la SVD (coseno 1.000). Correlación de rangos con PageRank: 0.24 (miran cosas distintas) | `P2_07` |
+| Comunidades (Parte V) | Louvain sobre el grafo completo: Q = 0.648 con 135 comunidades (22 de 10 o más proveedores), en 27 s. En una muestra de 270 proveedores: Louvain Q = 0.62, Girvan–Newman 0.58 (30 comunidades), espectral 0.52 (k = 11) y LPA 0.54 a 0.59 según la semilla. Un edge betweenness en el grafo completo tardaría unas 13 horas (estimación) | `P2_08` |
+| Comunidades solapadas (Parte V) | BigCLAM sobre la muestra (C = 8): 22 proveedores (8.1%) en 2 o más comunidades; ARI 0.52 frente a Louvain. La densidad entre los solapados (0.16) es menor que dentro de las comunidades (0.24), al contrario de lo visto en clase | `P2_08` |
+| Embeddings (Parte VI) | Núcleo de 3,489 proveedores (≥ 120 participaciones). SVD: pureza de vecinos 0.914 y ARI 0.786 frente a Louvain; node2vec: pureza 0.929 a 0.932 y ARI 0.64 a 0.82 según p y q (sin patrón claro). Frente a los tipos de la Parte II, ARI ≈ 0 | `P2_09` |
 
 **Notebooks nuevos** (ejecutar en este orden; todos leen los Parquet del Proyecto 1 o los que deja el notebook anterior)
 | Notebook | Motor | Por qué | Artefactos que exporta (`web_artefactos/p2/`) |
@@ -140,6 +145,9 @@ Todo es una **señal descriptiva para revisar**, no una acusación.
 | `P2_04_Recomendador_Contenido` | scikit-learn + FAISS | Índice HNSW en memoria | `contenido_ejemplos.json` |
 | `P2_05_Recomendador_Colaborativo` | NumPy + Spark MLlib (ALS) | ALS es la parte que pide Spark | `vecindario_k.csv`, `vecindario_user_k.csv`, `vecindario_variantes.csv`, `als_parametros.csv`, `als_alpha.csv` |
 | `P2_06_Evaluacion_Hibrido` | NumPy + Spark MLlib | Evalúa en el test (con intervalos, semillas y cobertura), elige α con tres cortes, sustitutos y afinidades | `eval_resultados.csv`, `eval_ic.csv`, `eval_diferencias.csv`, `cobertura.csv`, `als_semillas.csv`, `diagnostico_grado.csv`, `reporte_evaluacion.json`, `hibrido_alfa.csv`, `sustitutos.json`, `sustitutos_categoria.csv`, `afinidades_inusuales.csv`, `ejemplos_recomendaciones.json` |
+| `P2_07_PageRank_HITS` | Spark local + NetworkX (solo para verificar) | El grafo de derrotas sale de unir 2.4 millones de participaciones con las adjudicaciones; PageRank y HITS son iteraciones de potencia con uniones y sumas | `pr_top.csv`, `pr_por_beta.csv`, `pr_sensibilidad.csv`, `pr_convergencia.csv`, `pr_dispersion.csv`, `hits_autoridades.csv`, `hits_hubs.csv`, `hits_convergencia.csv`, `p4_resumen.json` |
+| `P2_08_Comunidades` | NetworkX, NumPy y scikit-learn; Spark solo para el perfil | El grafo (1.5 millones de aristas) cabe en memoria; Girvan–Newman y espectral exigen una muestra (se mide cuánto cuesta crecer) | `com_gn_curva.csv`, `com_espectral.csv`, `com_eigenvalores.csv`, `com_escala.csv`, `com_semillas.csv`, `com_metodos.csv`, `com_resolucion.csv`, `com_lpa_completo.csv`, `com_bigclam_C.csv`, `com_perfil.csv`, `com_tamanos.csv`, `com_solapados.csv`, `p5_resumen.json` |
+| `P2_09_Embeddings` | scikit-learn y gensim (local) | El núcleo (3,489 proveedores) cabe en memoria; no hace falta Spark | `emb_nodos.csv`, `emb_tsne.csv`, `emb_metricas.csv`, `emb_vecinos.csv`, `p6_resumen.json` |
 
 Las rutas se leen de variables de entorno (`P2_PARQUET`: Parquet del Proyecto 1; `P2_DATOS`: tablas intermedias que van dejando los notebooks; `P2_WEB`: salida para la página). Si no existen, usan carpetas de Google Drive como en Colab. Las tablas intermedias (Parquet y `.npy`) **no están en el repositorio**: se regeneran ejecutando los notebooks en orden.
 
@@ -151,6 +159,10 @@ Las rutas se leen de variables de entorno (`P2_PARQUET`: Parquet del Proyecto 1;
 | Recomendador por contenido | III | entidad de ejemplo |
 | Recomendador colaborativo | III | vecinos (K) en item–item y user–user, factores y regularización |
 | Evaluación e híbrido | III | top-k, métrica, α, proveedor, tipo de entidad y monto mínimo |
+| PageRank y HITS | IV | factor de amortiguamiento β y cuántos proveedores mostrar; β a comparar en la convergencia |
+| Comunidades | V | resolución de Louvain (más o menos comunidades) |
+| Embeddings de nodos | VI | embedding (SVD o node2vec), p, q y criterio de color del mapa t-SNE |
+| Análisis y discusión (Proyecto 2) | VII | (cinco pestañas con las preguntas de la Parte VII: qué aportó más, convergencia, escala, ética y volumen mayor) |
 
 **Datos personales:** igual que arriba, los RUC que no empiezan con 20 se muestran enmascarados y el nombre de una persona natural se reemplaza por «Persona natural (RUC 10283****79)».
 
@@ -160,6 +172,19 @@ Las rutas se leen de variables de entorno (`P2_PARQUET`: Parquet del Proyecto 1;
 - El peso del híbrido elegido en validación no coincidió con el mejor en el test (ver `P2_06`).
 - Los grupos de entidades son poco estables (ARI ≈ 0.80); es una sola partición temporal, así que los intervalos miden el azar al elegir entidades, no el cambio de periodo.
 - Las afinidades inusuales y los casos extremos tienen explicaciones normales frecuentes (servicios de apoyo, pocos procesos).
+
+**Limitaciones de las Partes IV a VI**
+- El grafo de PageRank usa solo procesos con hasta 30 postores y proveedores con al menos 5 participaciones; ganar un proceso no es lo mismo que ser «mejor» (influyen el precio, los requisitos y el momento). HITS usa solo la matriz de *train* (proveedores con 2 entidades o más y entidades con 3 proveedores o más).
+- La sensibilidad se analiza para β entre 0.50 y 0.95 (todos convergen; β = 0.95 necesita unas 300 iteraciones). Un valor extremo como 0.99 exigiría más de mil y no se incluyó.
+- Girvan–Newman y el espectral se corrieron sobre una **muestra aleatoria** de 270 proveedores; sirven para comparar métodos, no para describir el mercado. BigCLAM es una implementación simple sobre esa muestra: 90 de 270 proveedores quedan «sin comunidad» (pocas conexiones) y la observación de clase sobre la densidad en zonas de solapamiento no se cumplió.
+- Los embeddings se calculan sobre un **núcleo** de los 3,489 proveedores más activos; no sirven para describir a todos. node2vec es transductivo (un vector por nodo; un proveedor nuevo exige recalcular). Con p y q se probó una sola semilla y no hay un patrón claro.
+- Una comunidad o una cercanía en el embedding es una **agrupación para revisar**, no una prueba de acuerdos ni de irregularidades: proveedores del mismo rubro se encuentran en los mismos procesos de forma natural.
+
+**Métodos que la clase solo menciona o no cubre** (se usaron de forma simple y están marcados en los notebooks)
+- **HITS** (Parte IV): la clase lo nombra en las extensiones de PageRank. Se calculó con la misma iteración de potencia y se verificó contra la SVD.
+- **BigCLAM** (Parte V): la clase lo deja como tema de investigación. Implementación propia en NumPy sobre un subgrafo.
+
+Todo lo demás (SVD, node2vec con p y q, K-Means, t-SNE, Louvain, LPA, Girvan–Newman, espectral, PageRank) se vio en clase. Las caminatas de node2vec se programaron aquí porque el paquete `node2vec` no soporta bien nodos con miles de vecinos; el entrenamiento skip-gram usa `gensim`.
 
 ## Fuente y licencia
 - Fuente: datos abiertos de contrataciones públicas del Perú (SEACE) en formato OCDS, publicados por la OECE a través de la Open Contracting Partnership.
