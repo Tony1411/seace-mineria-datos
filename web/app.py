@@ -38,6 +38,12 @@ pagina = st.navigation(
             st.Page("pages/15_Rec_Colaborativo.py", title="Recomendador colaborativo", icon="🤝"),
             st.Page("pages/16_Evaluacion_Hibrido.py", title="Evaluación e híbrido", icon="⚖️"),
         ],
+        "Proyecto 2: enlaces, comunidades y embeddings": [
+            st.Page("pages/17_PageRank_HITS.py", title="PageRank y HITS", icon="🏆"),
+            st.Page("pages/18_Comunidades.py", title="Comunidades", icon="🫧"),
+            st.Page("pages/19_Embeddings.py", title="Embeddings de nodos", icon="🗺️"),
+            st.Page("pages/20_Discusion_Proyecto2.py", title="Análisis y discusión", icon="🧭"),
+        ],
         "Cierre": [
             st.Page("pages/10_Discusion_Critica.py", title="Discusión crítica", icon="⚖️"),
         ],
